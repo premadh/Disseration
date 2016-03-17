@@ -1,0 +1,139 @@
+\chapter[Summary and Conclusions]{Summary and Conclusions}
+\markboth{Summary and Conclusions}{}
+\label{ch:summary}
+
+\begin{fquote}[Graham Greene]A story has no beginning or end: 
+arbitrarily one chooses that moment of experience from which 
+to look back or from which to look ahead.
+\fqsource{The End of the Affair (1951)} \end{fquote}
+
+\begin{synopsis}
+This chapter summarizes the contributions of the thesis
+and draws conclusion from the research. The chapter also 
+discusses the overall future research perspectives in 
+multiresolution modelling domain. 
+%The specific improvements
+%to the methods developed in this thesis is developed
+%in Chapter~\ref{ch:discussion}.
+\end{synopsis}
+
+\section{Summary}
+\label{s:finsum}
+
+
+
+In traditional machine learning and data mining scenario 
+data analysed is from a single source represented in 
+a single resolution. In current age of big data, the 
+challenge is to analyse massive set of datasets, i.e., the 
+challenge is to analyse  multiple datasets within a single analysis. The multiple 
+datasets can be available in different representations. 
+Analysis of data in multiple representations needs
+methods and algorithms suitable for different 
+situations and application areas. Analysis of 
+data in multiple representations within a single analysis
+framework also caters the needs of data hungry algorithms.
+%and helps avoid overfitting and underfitting.
+
+The work in this 
+thesis has concentrated in developing algorithms
+and methods to address the challenges in 
+modelling data in multiple representations. 
+In this thesis, multiple representations aspect is 
+provided by the data represented in multiple resolutions.
+The algorithms especially covers mixture models and 
+semantic data mining methods. Different methods and 
+algorithms have been developed to 
+analyse multiresolution data suitable for different 
+situations and application areas. 
+
+The data transformation methods proposed in the thesis transforms 
+data across different resolutions to integrate datasets in different 
+resolutions providing an opportunity to analyse data in a single 
+resolution. Additionally, a computationally efficient algorithm to 
+train a series of mixture models to aid model selection algorithms 
+is developed in the thesis. Similarly, an algorithm based on merging 
+of mixture components to model multiresolution data produces models 
+in each resolution incorporating information from other data resolutions. 
+In addition, a multiresolution mixture model uses the domain knowledge
+to design multiresolution mixture components which are individually 
+functional as Bayesian networks. Furthermore, a semantic data mining 
+algorithm developed in this thesis uses knowledge of hierarchy
+of multiresolution data and other background knowledge
+to extract rules from the data. The algorithms and methods
+provide plausible improvements in multiresolution data 
+analysis compared to the individual analysis in the single 
+resolution data.
+
+\section{Future Work}
+\label{s:finfuture}
+
+The multiresolution analysis methodology developed in this thesis 
+are at its initial stage. 
+The thesis  forms the foundations for multiresolution modelling
+and the algorithms and methods proposed in the thesis need further
+research on the scope and general applicability. The methods
+are tested only on datasets such as the chromosomal aberrations 
+datasets, publicly available datasets, and simulated 
+datasets. However, the methods have not been developed as a tool 
+with rigorous testing for general applicability. The improvements 
+necessary for each of the developed methods and algorithms 
+are discussed in Chapter~\ref{ch:discussion}. This section discusses
+the future improvements in overall multiresolution analysis domain. 
+It includes developing the EM algorithm to learn 
+the multiresolution components of the mixture models.
+The EM algorithm used in this thesis learns the maximum 
+likelihood parameters when networks were arranged as vectors.
+
+
+Throughout the thesis, mixture models are used in hard clustering
+setting, i.e., one sample is only associated with one component 
+distribution generating the maximum posterior probability. 
+Mixture models can also be used in a soft clustering
+setting where posterior probability can be used to assign a 
+sample to more than one component distribution. Soft clustering 
+setting is beneficial in the chromosomewise analysis of 
+chromosomal aberrations data because some cancer samples with 
+the same known cancer labels can be grouped in two different
+clusters. Soft clustering of chromosomal aberrations data
+can also be justified because of the heterogeneous nature 
+of cancer. 
+
+In chromosomewise analysis, two exactly similar cancer samples
+can be labelled as two different cancers because other chromosomes
+that are likely to discriminate cancers will be ignored in the 
+current analysis. Furthermore, we have 73 different types  of 
+cancer labels for data in coarse resolution. Therefore, we can 
+use multiclass classification to analyse the data. In a broader 
+context, multiresolution multiclass classification can be a way
+forward in analysis of multiresolution data. 
+
+We need  to consider multiresolution  data because of the large  
+number of cancer types and smaller number of samples making 
+multiclass classification a challenging task.
+Furthermore, labels are unavailable for data in fine resolution.
+In such situations, learning from ambiguous labels~\cite{hullermeier2006} 
+or partial labels~\cite{cour2011} using clustering labels or the 
+cancer types can help in the analysis of chromosomal
+aberrations data. Finally, analysis of multiresolution 
+modelling also requires visualisation of the data as 
+well as the results. Therefore, visualisation is also 
+another direction for future work. In~\citepub{j2}, we use banded 
+matrix to visualise rules and cluster only in single resolution. 
+Initial ideas to visualise multiresolution can borrow from a 
+popular visualisation method in information 
+visualisation known as the Fish eye view~\cite{furnas86}.
+Similar to multiresolution data, Fish eye view also visualises
+data, providing users a detailed and also a global view.
+
+%which is popular in information visualization.
+%3. Large number of cancer cases and smaller number of samples .... 
+%multiclass classification
+%exactly similar sample can  be associated with different 
+%cancers when data from other chromosomes are discarded.
+%1. Mixture models in context of soft clustering and multiclass 
+%classification for cases within class but different clusters
+
+%4. Visualization of multiresolution data ... Fish eye view similarity 
+%Improvements are necessary on the methods 
+%before being used as tools in multiresolution modelling. 

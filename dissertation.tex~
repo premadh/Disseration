@@ -1,0 +1,448 @@
+%% Select the dissertation mode on
+% See the documentation for more information about the available class options
+% If you give option 'draft' or 'draft*', the draft mode is set on
+\documentclass[dissertation]{aaltoseries}
+\usepackage[utf8]{inputenc}
+\usepackage{amsbsy}
+%\usepackage{breqn}
+%\usepackage[final]{graphicx}
+% Lipsum package generates bullshit
+\usepackage{lipsum}
+% Set the document languages
+\usepackage[finnish,swedish,english]{babel}
+\usepackage{tabto}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{noReferences}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%\usepackage{pubs/lineno}
+%\linenumbers
+%\newcommand{\myprenote}{Here goes my text.}
+
+\def\bibpreamble{\vspace{-5cm}\begin{fquote}[Isaac Newton] If I have seen further, it is by standing on the shoulders of giants. \fqsource{{In a letter to his rival Robert Hooke (1676)}} \end{fquote} \vspace{2mm}} 
+% The author of the dissertation
+\author{Prem Raj Adhikari}
+% The title of the thesis
+%\title{Probabilistic Modelling Multiresolution 0-1 Data}
+\title{Probabilistic Modelling of Multiresolution Biological Data}
+
+% Use \sloppy to make right-margin easier?
+% Set picture units to be relative to font size (em)?
+% Use begingroup to rest units afterwards?
+
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{11\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill\quad
+        \scshape \@chapapp{} \thechapter
+        \quad \thickhrulefill
+        \par\nobreak
+        \vspace*{11\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{11\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{11\p@}%
+        \hrule
+    %\vskip 40\p@
+    \vskip 90\p@
+  }}
+
+%from here 
+% fquote Fancy Quotation environment
+
+% Use \sloppy to make right-margin easier?
+% Set picture units to be relative to font size (em)?
+% Use begingroup to rest units afterwards?
+
+\newcommand{\fq@author}{}
+\newcommand*{\fqsource}[1]{\gdef\fq@source{#1}}
+\definecolor{quotemark}{gray}{0.7}
+
+\newenvironment{fquote}[1][]{%
+\def\fq@author{#1}% Seem to need to use def for ifx @empty to work
+\let\fq@source\@empty
+  \vspace{1em}
+  \begin{list}{}{%
+      \setlength{\leftmargin}{0.2\textwidth}
+      \setlength{\rightmargin}{0.2\textwidth}
+    }
+    \item[]%
+    \begin{picture}(0,0)(0,0)
+      \put(-15,-5){\makebox(0,0){%
+	  \scalebox{5}{\textcolor{quotemark}{\bfseries``}}}%
+      }
+    \end{picture}\em\ignorespaces%
+}{%
+  \newline%
+  \makebox[0pt][l]{\hspace{0.6\textwidth}%
+  \begin{picture}(0,0)(0,0)
+    \put(15,10){\makebox(0,0){%
+	\scalebox{5}{\textcolor{quotemark}{\rm\bfseries''}}}%
+    }
+  \end{picture}}%
+  \ifx\fq@author\@empty\else\hfill\textsc{--- \fq@author}\fi
+  \ifx\fq@source\@empty\else\\\mbox{}\hfill\textsl{\small\fq@source}\fi
+  \end{list}
+  \ifx\fq@author\@empty\else\vspace{1em}\fi
+}
+%to here
+
+% Synopsis environment (like an abstract for each chapter)
+
+\newcommand{\synopsisname}{Synopsis}
+
+\newenvironment{synopsis}{%
+%  \small
+  \begin{center}%
+    {\bfseries \synopsisname\vspace{-.5em}\vspace{\z@}}%
+  \end{center}%
+  \quotation
+}{%
+  \endquotation
+}
+
+\newenvironment{publish}{%
+  \vfil
+  \center\small\ignorespaces
+  \rule{10em}{0.4pt}\par\noindent\ignorespaces
+}{%
+  \par\noindent\rule[1ex]{10em}{0.4pt}
+  \endcenter
+}
+
+
+\makeatletter
+\renewcommand\bibsection%
+{
+  \section*{\refname
+    \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}}
+}
+
+%\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+%\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+%\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+%\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+\begin{document}
+
+%% The abstract of the dissertation in English
+% Use this command!
+\draftabstract{
+
+When the measurements from the ever improving measurement technology are accumulated over a period of time, the result is a collection of data in different representations. However, most machine learning and data mining algorithms, in their standard form, are designed to operate on data in a single representation.
+
+
+This thesis proposes machine learning and data mining algorithms to analyse data in different representations with respect to resolution within a single analysis. The novel algorithms proposed to analyse multiresolution data are in the field of probabilistic modelling and semantic data mining. First, different deterministic data transformation methods are proposed to transform data across different resolutions. After the data transformation, the resulting datasets in same resolution are integrated and modelled using mixture models.
+
+Second, similar mixture components in a mixture model are merged one by one repetitively to generate a chain of mixture models. A new fast approximation of the KL-divergence is derived to determine the similarity of the mixture components. The chain of generated mixture models are useful for comparison purposes, for example, in model selection. Third, mixture components in different resolutions are iteratively merged to model multiresolution data generating models in each modelled resolution that incorporate information from data in other resolutions.
+
+Fourth, a single multiresolution mixture model with multiresolution mixture components is proposed whose mixture components independently have the capabilities of a Bayesian network. Finally, a three part methodology consisting of clustering using mixture models, rule learning using semantic subgroup discovery, and pattern visualisation using banded matrices is developed for comprehensive analysis of multiresolution data.
+
+The multiresolution data analysis methods presented in this thesis improve the performance of the methods in comparison with their single resolution counterparts. Furthermore, the developed methods aim to make the results understandable to the domain experts. Therefore, the developed methods are useful additions in the analysis of chromosomal aberration patterns and the cancer research in general.
+
+
+}
+
+
+\begin{preface}[Espoo]
+\begin{fquote}[Neal Cassady] A man’s life is merely a collection of events,
+building one upon the other. When all the events are tallied; the triumphs; 
+the failures; the mistakes, their sum makes up the man. 
+\fqsource{{The Last Time I Committed Suicide, 1997}} \end{fquote} 
+
+The work presented in this thesis was performed at Parsimonious 
+Modelling~(PM) research group at the Helsinki Institute for Information
+Technology~(HIIT), Department of Information and Computer Science~(ICS) 
+in Aalto University School of Science~(AaltoSCI). I am deeply indebted
+to my instructor D.Sc.(Tech.) Jaakko Hollm\'{e}n for his enthusiastic
+engagement in my research and his invaluable streams of advice, ideas, 
+and support ranging from the minute technical details 
+to the overall research ideas, as well as  living a life. I am also
+grateful to Prof. Samuel Kaski for his supervision of the thesis.
+
+I am thankful to Helsinki Doctoral Programme in Computer Science --- Advanced 
+Computing and Intelligent Systems (Hecse) for funding the last 
+three years of my research. I am also thankful to HIIT and Finnish Centre of Excellence for Algorithmic 
+Data Analysis Research~(ALGODAN) for duration 2008--2013 which is itself funded by the Academy of Finland. 
+They funded the first year of my graduate studies and  together with Hecse, they also funded numerous conference
+trips and research visits in Finland and abroad. The research  visits and conference trips have given
+me invaluable experiences in understanding research challenges and knowledge of 
+the state of the art in my research area. It  also provided me an opportunity 
+to communicate with researchers both formally and informally helping me to network and 
+collaborate.
+
+A big share of thanks also goes to my colleagues in the PM research 
+group~(Mikko, Janne) and the whole ICS, HIIT, and ALGODAN including 
+the support staffs for providing splendid working and research environment.  
+I would like to thank everyone involved in teaching and organising the 
+courses I attended for my graduate, and postgraduate degree.
+The courses have helped me prepare for my research and understand the 
+state of the art in my field of research. 
+
+Collaboration with fellow  researchers in the field has given me a 
+deeper understanding in teamwork, work ethics, and  work environment. 
+Moreover, I have gained ideas from discussion with  
+Prof. Nada Lavra\v{c}, An\v{z}e Vavpeti\v{c}, 
+Jan Kralj, Bimal Babu Upadhyaya, and Chen Meng. I thank the pre--examiners
+Prof. Dr. Marko Bohanec and Prof. Olli Yli--Harja for taking their precious 
+time to review this thesis and providing invaluable comments to improve the 
+thesis. I am grateful to Asst. Prof. Jeroen de Ridder, for the honour of 
+having him as the opponent for my dissertation.
+
+Outside of work, I would also like to thank my mates Gautam, Sandeep, Roshan, Bishal, and Subash. 
+%I would also like to thank other flatmates for making Finland a lively place to live in. 
+If it weren’t for you guys, I might have graduated sooner but without you, I would have 
+never graduated. My sincere gratitude also goes to my parents, family, and relatives 
+for their everlasting encouragement and motivation. Last but not the least, I thank my 
+wife, Manju, for being by my side, not only for the fun times, but also the ups and downs,
+and for being my support and my inspiration in all aspects of my life.
+
+\end{preface}
+
+%% Table of contents of the dissertation
+\tableofcontents
+
+%% For article dissertations, remove if you write a monograph dissertation.
+\listofpublications
+
+%% Add lists of figures and tables as you usually.
+%\listoffigures
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\input{pubs/abbreviations.tex}
+\input{pubs/introduction.tex} 
+\input{pubs/analysis.tex} 
+\input{pubs/mixmodels.tex}
+\input{pubs/multiresmodel.tex} 
+\input{pubs/discussion.tex}
+\input{pubs/summary.tex} 
+
+
+
+
+
+%% Examples of article references, remove these from your manuscript!
+% Uncomment them, if you want to see the results of these commands in this example document
+
+ % Refer to the Journal paper 1 of this example document
+%\citepub{j1} \& \cpub{j1} \& \cp{j1} \& \pageref{j1} \& \ref{j1}
+
+% Refer to the Conference paper of this example document
+%\citepub[p.~2]{c1} \& \cpub[Sec.~ 1]{c1} \&  \cp[pp.~1--2]{c1} \& \pageref{c1} \& \ref{c1} 
+
+
+
+
+%% An example for changing the running header (the optional parameter)
+
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+%% The following commands are for article dissertations, remove them if you write a monograph dissertation.
+
+% Errata list, if you have errors in the publications.
+%\errata
+
+%% The first publication (journal article)
+% Set the publication information.
+% This command musts to be the first!
+\addpublication[conference]{Prem Raj Adhikari, Jaakko Hollm\'{e}n}{Patterns from Multiresolution 0--1 data} 
+{Jilles Vreeken, Nikolaj Tatti, and  Bart Goethals, Editors, UP '10, ACM SIGKDD Workshop on Useful Patterns}
+{Washington DC, ACM, New York, NY, USA, Pages 8--16, July 25, 2010, DOI: 10.1007/s10844-013-0282-3}{July}{2010}{ACM}{c1}
+
+%\addpublication[conference]{Conference Paper Authors}{Conference Paper Title}{Conference Name}{Location, pages, and other 
+%detailed information}{Month}{Year}{Copyright Holder}{c1}
+% Add the dissertation author's contribution to that publication (the order can be interchanged with \adderrata).
+\addcontribution{Generally, mixture models and pattern mining algorithms
+%, similar to any other machine learning and data mining algorithms, 
+can handle only single resolution data in their standard form. %To ameliorate such constraints, 
+We propose different deterministic data transformation methods to transform datasets across different resolutions 
+facilitating the integration of datasets. The integrated datasets are in single resolution. We then use pattern 
+mining algorithms such as the maximal frequent itemset and probabilistic modelling methods such as mixture models 
+to identify and compare the patterns and performance of the algorithms in different resolutions of data.
+%and investigates the effects of noise in finer resolutions of data.
+
+Forming of the original idea and designing of the methodology for the research are performed jointly by the authors.
+The current author implemented and performed all the experiments and wrote most of the manu\-script. The second author 
+suggested the corrections to the manuscript. The current author also presented the contribution at the conference.}
+% Add the errata of the publication, remove if there are none (the order can be interchanged with \addauthorscontribution).
+%\adderrata{This is wrong}
+% Add the publication pdf file, the filename is the parameter (must be the last).
+\addpublicationpdf{pubs/up2010.pdf}
+
+%% The second publication (conference article, note the optional parameter)
+% Set the publication information.
+
+%\addpublication{Journal Paper Authors}{Journal Paper Title}{Journal Name}{Volume, issue, pages, and other detailed information}
+%{Month}{Year}{Copyright Holder}{j1}
+\addpublication[journal]{Prem Raj Adhikari, Jaakko Hollm\'{e}n}{Fast Progressive Training of Mixture Models for Model Selection}
+{Journal of Intelligent Information Systems}{IN PRESS, Springer, DOI: 10.1007/s10844-013-0282-3}{Published Online: December}{2013}{Springer}{j1}
+
+% Add the dissertation author's contribution to that publication.
+
+\addcontribution{%Generally, 
+Expectation Maximisation~(EM) algorithm is a popular algorithm to learn the maximum likelihood parameters of the 
+mixture model. However, EM algorithm requires apriori knowledge of the number of component distributions in the
+mixture model to learn the maximum likelihood parameters of the mixture model. This is often unknown apriori in
+most situations. In this publication, we propose an algorithm to efficiently 
+train a series of mixture models each with different number of mixture components suitable for comparisons during model selection.
+
+The authors are jointly responsible for the original idea of the contribution. The current author performed all the experiments and wrote
+most of the manuscript. The second author suggested corrections on the manuscript. The current author also presented an earlier 
+version of this contribution~\cite{adhikari12ds} in a conference.
+
+}
+
+%we have also proposed an algorithm to efficiently train mixture 
+%model in~\cite{adhikari13jiis}}
+% No errata
+% Add the publication pdf file, the filename is the parameter.
+\addpublicationpdf{pubs/jiis13.pdf}
+
+%% The third publication (another journal paper, accepted for publication, note the optional parameter)
+% Set the publication information, detailed information can be empty
+
+\addpublication[conference]{Prem Raj Adhikari, Jaakko Hollm\'{e}n}{Multiresolution Mixture Modeling using Merging of Mixture Components}
+{Proceedings of Fourth Asian Conference on Machine Learning (ACML 2012)}{In Steven C.H. Hoi and Wray Buntine Editors, Volume 25 of 
+Journal of Machine Learning Research---Proceedings Track, pages 17--32, November 4--6, 2012, Singapore,
+URL: http://jmlr.csail.mit.edu/proceedings/papers/v25/adhi\-kari12.html}{November}{2012} {JMLR}{c2}
+
+% Add the dissertation author's contribution to that publication.
+
+\addcontribution{
+%Generally, mixture models can only model single data resolution. 
+In this contribution, we propose an algorithm to model multiresolution data by merging the similar components 
+from different mixture models in different resolutions. The mixture models are generated in each
+data resolution separately but they incorporate the information from the data in other resolutions.  
+ 
+
+The current author is responsible for forming the original idea, and methodology of the work. 
+The current author also performed the all experiments and wrote most of the manuscript. The second 
+author provided useful suggestions and corrections to the manuscript. The current author also 
+presented the research in the conference.}
+
+% Add the errata of the publication, remove if there are none.
+%\adderrata{This is wrong}
+% Add the publication pdf file, the filename is the parameter.
+\addpublicationpdf{pubs/acml12.pdf}
+
+%% The fourth publication (yet another journal paper, submitted for publication, note the optional parameter)
+%% Note that you are allowed to use this option only when submitting the dissertation for pre-examination!
+% Set the publication information, detailed information is not printed
+
+\addpublication[conference]{Prem Raj Adhikari, Jaakko Hollm\'{e}n}{Mixture Models from Multiresolution 0--1 Data}
+{Proceedings of Sixteenth International Conference on Discovery Science (DS 2013)}{Johannes F\"{u}rnkranz, 
+Eyke H\"{u}llermeier, and Tomoyuki Higuchi, Editors, Volume 8140 of Lecture Notes in Computer Science, 
+Springer--Verlag, Berlin Heidelberg, pages 1--16,  October 6--9, 2013, Singapore. DOI: 10.1007/978-3-642-40897-7\_1 }
+{October}{2013}{Springer-Verlag Berlin Heidelberg 2013}{c3}
+
+% Add the dissertation author's contribution to that publication.
+
+\addcontribution{In this contribution, we propose a multiresolution mixture model consisting of multiresolution 
+mixture components. The structure of multiresolution mixture components are determined from the domain ontology
+which is known apriori. The individual mixture components provide the functionality of Bayesian networks.
+
+The authors are jointly responsible for the original idea and designing the methodology for the research. The current author
+performed the experiments and wrote most of the manuscript. The second author suggested corrections to the manuscript.
+The current author also presented the contribution in the conference.}
+% Add the errata of the publication, remove if there are none. (in submitted paper this is unlikely)
+%\adderrata{This is wrong}
+% Add the publication pdf file, the filename is the parameter.
+\addpublicationpdf{pubs/ds13.pdf}
+
+\addpublication[conference]{Prem Raj Adhikari, An\v{z}e Vavpeti\v{c}, Jan Kralj, Nada Lavra\v{c}, Jaakko Hollm\'{e}n}
+{Explaining mixture models through semantic pattern mining and banded matrix visualization}
+{Proceedings of Seventeenth International Conference on Discovery Science (DS 2014)}{Sa\v{s}o D\v{z}eroski, Pan\v{c}e Panov, Dragi Kocev, 
+Ljup\v{c}o Todorovski, Editors, Volume 8777 of Lecture Notes in Computer Science, Springer International Publishing Switzerland 2014, pages 1-12,
+October 8--10, 2014, Bled, Slovenia. DOI: 10.1007/978-3-319-11812-3\_1}
+{October} {2014}{Springer International Publishing Switzerland 2014}{j2}
+
+
+\addcontribution{In this contribution, we propose three part exploratory approach to analyse multiresolution data. The three parts consist
+of clustering using mixture model, extracting rules from clusters using semantic data mining, and simultaneous visualisation of the 
+clusters from mixture models and the rules from semantic data mining algorithm using banded matrices. The semi–automated methodology 
+proposed in the contribution aims to provide exhaustive analysis of a complex real world multiresolution data.
+
+The authors are jointly responsible for the idea and designing of the research methodology. The current author implemented the
+clustering part of the three part explanatory process. Writing the paper was a collaborative effort of all the authors.}
+
+% Add the dissertation author's contribution to that publication.
+
+
+% Add the errata of the publication, remove if there are none. (in submitted paper this is unlikely)
+%\adderrata{This is wrong}
+% Add the publication pdf file, the filename is the parameter.
+\addpublicationpdf{pubs/ds14.pdf}
+
+%Machine learning and data mining algorithms have been popular field of study 
+%and research in the 21st century. These algorithms have provided an opportunity 
+%to analyze, understand, and extract information and knowledge from the overwhelming 
+%amount of data being produced everyday. Similarly, 
+%Over the years, measurement devices, and technology 
+%have also been improving steadily providing us a platform to measure finer details of 
+%any phenomenon.
+% arising from different measurement technology. 
+%and disregard any supplementary information available. 
+%The standard solution in data analysis 
+%is to analyze each representation of data separately and compare the results 
+%quantitatively. Additionally, considering the supplementary background knowledge 
+%with the empirical data during the analysis have shown to benefit the knowledge 
+%discovery process. This thesis presents methods to analyze data in different 
+%representation within a single analysis considering the supplementary background
+%knowledge. Furthermore, methods to speed-up the training of the algorithms 
+%used in the thesis are also developed.
+%Furthermore, algorithms to consider 
+%supplementary background information in the analysis of data in different 
+%resolutions. 
+%The methods are developed 
+%mostly considers differences in data resolution as 
+%difference in representation the 
+%with application to cancer research and uses chromosomal amplification data
+%describing the cancer patients in different resolutions as a motivating example
+%of multiresolution data. 
+%The results show
+%that mixture models on integrated data outperform mixture models on single
+%resolution data. 
+%The mixture model in each resolution 
+%incorporates information in data in other resolution thus showing improved 
+%performance over single resolution models.
+
+%In addition to the taxonomy of hierarchy of
+%regions used as a background knowledge several supplementary biological 
+%knowledge enhances data analysis procedure. 
+
+
+%Mixture models are chosen to analyze data in different 
+%resolution because of their probabilistic nature, ability to model 
+%heterogeneity, and clustering capabilities. Similarly, semantic data
+%mining algorithms uses supplementary information such as 
+%taxonomy of hierarchy of representation to mine information from the
+%empirical data.
+% Let's add another one in Finnish
+%\draftabstract[finnish]{\lipsum[4-6]}
+% And yet another one in Swedish
+%\draftabstract[swedish]{\lipsum[7-9]}
+
+%% Preface
+% If you write this somewhere else than in Helsinki, use the optional location.
+%The proposed idea resembles clustering 
+%aggregation~\cite{gionis07ca} as multiresolution data is modeled by transferring information among 
+%models in different resolutions.
+
+%This contribution extended the a conference  paper~\cite{adhikari12ds}.The author also presented the the research in that conference.
+%Furthermore, probabilistic models, especially the Mixture models are often criticized for being computationally 
+%very expensive. %founded on fast approximation of Kullback Leibler (KL) divergence.
+
+\end{document}

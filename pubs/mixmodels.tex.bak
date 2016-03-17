@@ -1,0 +1,454 @@
+\chapter[Mixture Models and Model Selection]{Mixture Models and Model Selection}
+\markboth{Mixture Models and Model Selection}{}
+\label{ch:mixmodels}
+
+\begin{fquote}[Samuel Karlin]The purpose of models is not to fit the data but to 
+sharpen the questions.\fqsource{$11^{th}$ R A Fisher Memorial Lecture (1983)} 
+\end{fquote} 
+
+Classical probability distributions such as Gaussian, Poison, Bernoulli
+provide  plausible methods for probabilistic modelling of the 
+data~\cite{walpole2012}. However, in the real--world scenario, 
+a single probability distribution cannot emulate the complexity 
+in the data. Nevertheless, combination of sufficiently large number 
+of probability distributions can emulate complexity in the data. 
+Such combination of multiple classical probability distribution 
+forms a mixture model. Formally, mixture models are semi-parametric 
+latent variable models that models a complex data distribution by
+weighted sum of different probability 
+distributions~\cite{bishop06,everittmixdist,mclachlanfmm}. 
+
+The probability distributions within a mixture model known as 
+component distributions describe the
+observation present in the data. The formulation of mixture model 
+involves determining the number of components in the mixture model,
+their associated distribution, and identification of the component
+generating the specific data sample~\cite{mclachlanfmm}. 
+Mixture models are often used  in hard clustering analysis as in 
+this thesis where only one component is responsible to generate a 
+specific data sample. However, mixture model provides the option of 
+learning soft clustering where a data sample belongs to more than 
+one cluster with a certain degree of association~\cite{bishop06}. 
+A standard formulation of the mixture model assumes that the samples 
+are independent and identically distributed (IID). The probability 
+density of a mixture model can be expressed as the weighted
+sum of its component distribution as:
+
+\begin{eqnarray}
+\label{eq:mixmodel}
+ p(x)=\displaystyle\sum_{j=1}^{\mathrm{J}} \pi_j P_j(x \mid \boldsymbol{\theta}_j),
+\end{eqnarray}
+
+where $j$ indexes the component. The mixing proportion (mixture 
+coefficient or mixing coefficient) determines the weight of the 
+component distribution in the overall mixture model. 
+The mixing coefficient is denoted by $\pi_j$ for the $j^{th}$
+component in the mixture model. They satisfy 
+the property of convex combination such that 
+$\int p(x)dx=1$, $\pi_j > 0$, and $\sum_{j=1}^{J}\pi_{j}=1$~\cite{everittmixdist}. 
+Similarly, the parameters $\boldsymbol{\theta}_j$ denotes 
+the parameters of the $j^{th}$ component of the mixture model.
+Application area dictates the choice of distributions, which 
+in literature is dominated by the distributions from exponential 
+family such as Gaussian, and  Dirichlet~\cite{mclachlanfmm}. 
+Bernoulli is the preferred distribution because of the 0-1 
+datasets used in this dissertation.
+
+\section{Mixture Models of 0--1 Data}
+\label{s:mixmdl01}
+
+Under the assumption that data originates from a known number of components,
+$J$, mixture model of multivariate Bernoulli distribution can be mathematically
+expressed as~\cite{everittmixdist,wolfe70}:
+
+\begin{eqnarray}
+\label{eq:mixmdl01data}
+p(\mathbf{x} \mid \boldsymbol{\Theta})= \displaystyle\sum_{j=1}^{\mathrm{J}} \pi_j \displaystyle \prod _{i=1} ^{\mathrm{d}} \theta_{ji}^{x_i} (1-\theta_{ji})^{1-x_i}.
+\end{eqnarray}
+
+%As shown in the Equation~\ref{eq:mixmdl01data}, 
+Finite mixture model of 
+multivariate Bernoulli distributions for a dataset, 
+$\boldsymbol{X} = \{\mathbf{x}_1, \ldots, \mathbf{x}_N \}$ of
+dimensionality, $d$, are parameterized by 
+$\boldsymbol{\Theta}=\{J$, $\{ \pi_j,\Theta _j\}_{j=1}^{J}\}$.  
+In the Equation~\ref{eq:mixmdl01data}, $j$ indexes the components,
+and $i$ indexes the dimensionality. $x_i$ denotes the data point 
+such that $x_i \in \lbrace 0,1 \rbrace$. The random variable $\theta_{ji}$  
+denotes the probability of the variable taking the value 1 in $i^{th}$ 
+dimension of the $j^{th}$ component. We can collect all the random 
+variables in a component in a variable denoting a vector, $\Theta _j$ such that
+$\Theta _j=\theta_{j1},\theta_{j2},\theta_{j3}, \ldots, \theta_{jd}$.
+Similarly, all the parameters of the mixture model including mixture
+components can be collected in a variable denoting a matrix, 
+$\boldsymbol{\Theta}$ such that 
+$\boldsymbol{\Theta}=\{J$, $\{ \pi_j,\Theta_j\}_{j=1}^{J}\}$.
+The parameter values that maximize the log-likelihood function 
+of the parameter $\boldsymbol{\Theta}$ can be defined using 
+maximum likelihood principal~\cite{bishop06} as:
+
+\begin{eqnarray}
+  \label{eq:loglkhood}
+  \mathcal{L} (\boldsymbol{\Theta} \mid \boldsymbol{X}) =\displaystyle\sum_{n=1}^{\mathrm{N}} \log  \left [ \displaystyle\sum_{j=1}^{\mathrm{J}} \pi_j \displaystyle \prod _{i=1} ^{\mathrm{d}} \theta_{ji}^{x_{ni}} (1-\theta_{ji})^{1-x_{ni}} \right].
+\end{eqnarray} 
+
+
+\section{Expectation Maximization Algorithm}
+\label{s:emalgo}
+Expectation Maximization (EM) algorithm is an iterative algorithm
+to determine the maximum likelihood (MLE) or maximum a posteriori (MAP)
+estimates of the parameters~\cite{expectmax,McLachlan2008emext}. The 
+EM algorithm is a popular algorithm for learning model parameters in
+probabilistic latent variable models by maximizing the marginal 
+likelihood. The iterations of EM algorithm alternates between
+Expectation step (E-Step) and Maximization Step (M-Step). E-step 
+estimates the posterior probability and M-step optimizes the 
+model parameters for the next iteration. The EM algorithm can be 
+used to learn the maximum likelihood parameters of mixture model
+of Bernoulli distributions~\cite{wolfe70}.
+
+We can differentiate Equation~\ref{eq:loglkhood} component wise
+with respect to $\theta_{ji}$, and $\pi_{j}$ as:
+\begin{eqnarray}
+\label{eq:em1}
+\frac{\delta \mathcal{L}}{\delta \pi_{j}} = \frac{1}{\pi_{j}} \displaystyle\sum_{n=1}^{\mathrm{N}} P(j|x_n;\pi,\Theta)-N \quad j=1, \ldots, J
+\end{eqnarray}, 
+and
+\begin{eqnarray}
+\label{eq:em2}
+\frac{\delta \mathcal{L}}{\delta \theta_{ji}} = \frac{1}{\theta_{ji}(1-\theta_{ji})} \displaystyle\sum_{n=1}^{\mathrm{N}}P(j|x_n;\pi,\Theta) (x_{ni}-\theta_{ji}) \\
+where \quad j=1, \ldots, J \; and \; i=1,\ldots, d \nonumber
+\end{eqnarray}. 
+The term -N in equation satisfies the constraint $\sum_{j=1}^{J}\pi_j$ introduced in 
+loglikelihood via Lagrange multiplier. We can calculate the posterior probability using 
+Bayes' theorem as:
+
+\begin{eqnarray}
+ \label{eq:emalgo1}
+ P(j \mid \boldsymbol{X};\boldsymbol{\Theta})  =  \frac{\pi_j \prod_{i=1}^{d} \theta_{ji}^{x_{ni}}(1-\theta_{ji})^{1-x_{ni}}} {\sum_{j'=1}^{J} \prod_{i=1}^{d} \theta_{j'i}^{x_{ni}}(1-\theta_{j'i})^{1-x_{ni}}}. 
+ \end{eqnarray}
+ 
+We can now define the two step EM algorithm by:
+
+\textbf{E-step:} In E-step, we compute the posterior probability using 
+Equation~(\ref{eq:emalgo1}) for the most recent values of parameters
+{$\pi ^{\tau}, \Theta ^{\tau}$} at iteration $\tau$, i.e., calculate \\
+$P(j \mid x_n;\pi ^{\tau},\Theta ^{\tau})$
+
+\textbf{M-step:} M-step recomputes the values of parameters 
+{$\pi^{(\tau+1)}, \boldsymbol{\Theta} ^{(\tau+1)}$} for the next iteration.
+
+\begin{eqnarray}
+\label{eq:mstep1}
+\pi_{j}^{\left(\tau+1\right)} & = & \frac{1}{N} \displaystyle \sum _{n=1}^N P(j \mid x_n;\pi^{(\tau)},\Theta^{(\tau)}) \nonumber \\
+\Theta_{j}^{(\tau+1)} & = & \frac{1}{N \pi_{j}^{(\tau+1)}} \displaystyle \sum _{n=1}^N P(j \mid x_n;\pi^{(\tau)},\Theta^{(\tau)})x_n 
+\end{eqnarray}
+
+Iterations between the E and the M step produce a succession of monotonically
+increasing sequence of log-likelihood values for the parameters
+$\tau\;=\;0,1,2,3,\ldots$ regardless of the starting point
+$\{\pi^{(0)},\Theta^{(0)}\}$~\cite{McLachlan2008emext}. 
+
+
+\section{Model Selection in Mixture Models (\citepub{j1})}
+\label{s:mdlselectmix}
+
+Model selection is the process of selecting a model of optimal complexity 
+for the given set of (finite,training) data~\cite{cherkassky1998,hastie09}.
+In the statistics literature, model selection is  the 
+process of selecting a specific model from the plethora of 
+choices~\cite{kadane04}. For example, in classification model selection 
+may refer to choosing a classification algorithm from different
+choices such as Naive Bayes, Decision Trees, and Support Vector Machines.
+Most of the focus in this thesis is modelling heterogeneous chromosomal
+amplification datasets. Therefore, mixture models were chosen as the 
+model of choice because of their ability to model heterogeneity and their 
+clustering capabilities. 
+
+In this thesis model selection 
+refers to model structure selection or complexity selection which 
+determines the flexibility of the model to fit or explain the data.
+In other words, model selection in this context refers to choosing 
+an appropriate level of model complexity from within the selected 
+class of model, i.e., mixture model. The complexity parameter 
+in mixture  modelling scenario is the number of components in the
+mixture model. Model selection, therefore, is the selection of 
+number of components in the mixture model~\cite{fraley1998}.
+
+EM algorithm requires apriori knowledge of the number of components  
+in the mixture model to learn the maximum likelihood parameters from
+the data~\cite{McLachlan2008emext}. However, the number of components
+in the mixture models to fit the data are often unknown apriori.
+Furthermore, the sole aim of machine learning and data mining problem 
+can often be restricted to determining the number of components in the
+mixture model, i.e., the number of clusters in the data. 
+
+A large 
+number of mixture components maximizes the 
+loglikelihood in Equation~\ref{eq:loglkhood}. However, larger number
+of mixture components overfit the data, and generalizes poorly on the unseen 
+data. Additionally, mixture models with large number of components 
+increase complexity in training of mixture models in both time and 
+memory. In contrast, smaller number of mixture  components underfit 
+the data, and unable to adequately represent underlying data structure. 
+Therefore, model selection aims to optimize this trade-off between 
+too simple and complex models.
+
+
+\subsection{Related work in Model Selection in Mixture Models}
+\label{ss:relatedmxmdl}
+
+A plethora of criteria and methods have been proposed in the literature
+to determine the optimal number of mixture components in a mixture 
+model~\cite{mclachlanfmm}. For example, authors in~\cite{celeux07},~\cite{Figueiredo2002}, 
+and~\cite{oliveira05} provide comprehensive 
+review of deterministic, and stochastic and resampling criteria for 
+model selection. Deterministic criteria consists of criteria such as
+Akaike Information Criterion (AIC)~\cite{akaike1973}, Bayesian 
+Information Criterion (BIC)~\cite{schwarz78}, Minimum Description
+Length (MDL)~\cite{rissanen1978}, and integrated classification 
+likelihood (ICL)~\cite{biernacki2000}. Similarly,  stochastic 
+methods includes Markov Chain Monte Carlo (MCMC)~\cite{bensmail97},
+resampling methods includes bootstrapped likelihood ratio 
+test~\cite{McLachlan1987}. Similarly, authors in~\cite{woo2006}
+propose robust approach against model misspecification that leads 
+to a best-fitting mixture density based on minimum Hellinger 
+distances. Authors in~\cite{chen2008}~and~\cite{huang2013model}
+use penalized likelihood method for model selection in mixture
+model.
+
+Data likelihood is often used as 
+the measure of the quality of mixture models~\cite{mixmodelcv}.
+A well trained mixture model with appropriate number of mixture
+component models the data generation probabilities and produces
+high likelihood values for the unseen data. Furthermore, 
+cross-validation have been popular model validation technique
+in the literature~\cite{geisser1974,monsteller1968,stone1974}.
+Hence, in this thesis we use cross-validated loglikelihood as 
+a criteria for model  selection.
+
+
+% and also 
+%of the  model selection in mixture models focusing on the selection of 
+%the number of mixture components. 
+%Another application area where mixture 
+%models have gained prominence is the density estimation.
+%~\cite{mclachlanfmm}
+%Additionally, mixture models have also been extensively used to 
+%handle the missing data for building the model. 
+%~\cite{barberBRML12}
+%Mixture models have have often been used to combine different density
+%models
+%~\cite{bishop06}. 
+%Mixture models have also been used to model heterogeneity~\cite{mclachlanfmm}. 
+%Mixture models have found diverse usage from density estimation 
+%to handling missing data~\cite{mclachlanfmm}. However, clustering
+%is one of the principal uses of mixture models. 
+% 
+%A well trained mixture model with appropriate number of mixture component
+%models the data generation probabilities and produces high likelihood values
+%for the unseen data.
+
+
+\section{Fast Progressive Training of Mixture Models}
+\label{s:fast}
+
+EM algorithm is sensitive to initialization and susceptible to local 
+optima~\cite{McLachlan2008emext,wu1983}. One solution to the problem
+is to run the EM algorithm from different random
+initialization and select the model with highest likelihood as the global 
+optimum. Similarly, another solution is take the average of different runs 
+as general performance of the model as in~\cite{tikka2007b}. Furthermore, 
+EM algorithm to learn mixture model are computationally expensive because 
+of slow monotonic convergence property of EM algorithm~\cite{McLachlan2008emext}.
+Therefore, multiple restart strategy is popular method in literature where 
+EM algorithm is run only for a small number of steps, i.e., not until 
+convergence  and select the one with maximum likelihood to continue to 
+train until  convergence~\cite{chickering1997}. 
+Similarly, different sophisticated algorithms have been proposed to alleviate
+the problem of local optima in EM algorithm, for example using splitting and 
+merging of mixture components~\cite{karciauskas2007,ueda2000}.
+
+The training strategy is similar to  backward elimination 
+methodology in feature selection literature~\cite{guyon2003}. 
+We initially start with large number of mixture components
+and progressively merge them until the number of components is 1.
+The aim of the methodology described in \citepub{j1} is not propose 
+any new model selection criteria but efficient methodology to train 
+mixture models that are similar but for the number of mixture 
+components. We use Kullback Leibler (KL) divergence as a measure
+of similarity between two components in the mixture model.
+
+\subsection{Kullback Leibler Divergence and Approximation}
+\label{ss:approxKL}
+Kullback Leibler (KL) divergence is a non-symmetric measure of difference 
+between two probability distribution~\cite{kullbackleibler51kl}. 
+Given two probability distributions $P$ and $Q$ on a finite set 
+$\boldsymbol{X}$, the KL divergence between $P$ and $Q$ is 
+symmetrized by adding the KL divergence from $P$ 
+to $Q$ and $Q$ to $P$~\cite{juang85}. 
+
+\begin{eqnarray}
+  \label{eq:symmc}
+  \mathcal{D}_{KL}(P||Q)+\mathcal{D}_{KL}(Q||P) & =  &\displaystyle\sum_{i} P(i) log  \frac{P(i)}{Q(i)}+\displaystyle\sum_{i} Q(i) log \frac{Q(i)}{P(i)}  \nonumber \\
+  & = &\displaystyle\sum_{i} \left[ \{ P(i)-Q(i) \} log \frac{P(i)}{Q(i)}\right]
+\end{eqnarray}
+
+In Equation~(\ref{eq:symmc}), $i$ indexes all possible combinations of data elements.
+The symmetric KL divergence satisfies the properties of distance measure such as
+Positivity, Self–similarity, and Self-identification but disatifies the 
+triangle equality law~\cite{kullbackleibler51kl}. KL divergence have been
+popular as a difference measure between two probability distribution in
+literature although it is unsuseable as a metric. The KL divergence between 
+two components of a mixture model for data of dimension, $d$, indexed by $k$ 
+for two component distributions $\theta$ and $\beta$ have been derived 
+in~\cite{adhikari12ds} as:
+
+\begin{eqnarray}
+\label{eq:final2sum} 
+KL_{\theta\beta} & = & \displaystyle \sum_{i=1}^{2^{{d}}} \left[ \left\{ \displaystyle \prod _{k=1}^{{d}}  \left(\theta_k^{x_{ik}}(1-\theta_{k})^{(1-x_{ik})} \right)  -\displaystyle \prod _{k=1}^{{d}} \left(  \beta_{k}^{x_{ik}}(1-\beta_{k})^{(1-x_{ik})} \right) \right\} \nonumber \right. \\ 
+& & \left. \boldsymbol{\cdot} \; \displaystyle \sum_{k=1}^{{d}} \; log \; \frac{\theta_{k}^{x_{ik}} (1-\theta_{k})^{(1-x_{ik})}} { \beta_{k}^{x_{ik}}(1-\beta_{k})^{(1-x_{ik})}} \right].
+\end{eqnarray}
+
+The Equation~\ref{eq:final2sum} is a large sum. For example, if the 
+dimensionality of the data is 5 then we iterate for 32 sums and similarly 
+when the dimensionality is 20, we iterate for more than a million sums 
+(1,048,576). Furthermore, the number of comparisons in a mixture model
+having $J$ components for data of dimensionality $d$ is $2^{d}J^{2}$ 
+which is computationally expensive. Therefore, in~\citepub{j1}, we 
+derive a computationally efficient approximation of the  KL divergence as:
+
+\begin{eqnarray} 
+\label{eq:symmcf}
+KL_{\theta\beta}  =  \displaystyle \sum_{i \in x^{*} } \left\{ \displaystyle \prod _{k=1}^{{d}}  \left(\theta_k^{x^{*}_{ik}}(1-\theta_{k})^{(1-x^{*}_{ik})} \right) -\displaystyle \prod _{k=1}^{{d}} \left(  \beta_{k}^{x^{*}_{ik}}(1-\beta_{k})^{(1-x_{ik})} \right) \right\}. 
+\end{eqnarray}
+
+In Equation~\ref{eq:symmcf}, we approximate the summation with only 
+the samples present in the data.  Similarly, we remove  the fraction 
+containing the log term. These approximations are bound to inaccurately 
+identify two components  as most simlar to eachother while they differ 
+considerably in the full and accurate KL divergence.  The inaccuracies
+are in the form of selection of two dissimilar components 
+in mixture models to merge. The 
+two components selected can mismatch between full and accurate KL 
+divergence and our approximation and two inaccurately selected 
+components can be merged. However, in~\citepub{j1}, we show that 
+our approximation is good enough estimate of the full KL divergence. 
+
+Our approximations as reported  in~\citepub{j1} is twenty-five 
+times better than random matching of the components. Similarly, 
+our approximation are  10,000 times faster than actual full KL
+divergence when the data dimensionality is 20. 
+Nevertheless, we compensate for such 
+mismatches by retraining the mixture models after merging the 
+mixture components. In~\citepub{j1}, we are primarily interested 
+in determining  the two closest component distributions in a 
+mixture model. We are not necessarily interested in the exact 
+minimum values of  KL divergence between two component 
+distributions in a mixture  model.
+
+\subsection{Series of Mixture Models}
+\label{ss:series}
+
+First, algorithm proposed in~\citepub{j1} trains mixture model 
+with large number of mixture components. Second, the KL 
+divergence among the components is calculated. The two components
+with minimum KL divergence are merged in similar to~\cite{ueda2000}.
+Mathematically, the merge operation for the mixing proportions of
+two candidate component distributions $\pi_{klmin,1}$, and
+$\pi_{klmin,2}$ to generate a single component distribution 
+$\pi_{merged}$ expressed as:
+
+\begin{eqnarray}
+\label{eq:mcomp}
+\pi_{merged} \; = \; \pi_{klmin,1}\; + \; \pi_{klmin,2}. 
+\end{eqnarray}
+Merging mixing components using Equation~(\ref{eq:mcomp}) preserves
+the properties of mixing proportion such as they have to sum to 1.
+Similarly, we can merge the parameters of mixture components 
+$\Theta_{klmin,1}$ and $\Theta_{klmin,2}$ weighted with 
+their respective mixing components to generate parameters
+for merged component $\Theta_{merged}$ as:
+
+\begin{eqnarray}
+\label{eq:wmparam}
+\Theta_{merged} \; = \; \frac{\pi_{klmin,1} \; \times \; \Theta_{klmin,1}\; + \; \pi_{klmin,2} \; \times \; \Theta_{klmin,2}} {\pi_{klmin,1} \; + \pi_{klmin,2}}. 
+\end{eqnarray}
+
+The parameters of merged component distributions in Equation~(\ref{eq:wmparam})
+also satisfy the properties of a random variable, $\theta$ such that
+$0 \le \theta \le 1$. The mixture model obtained after merging the mixture
+components is retrained before next iteration of merge operation.
+This progressive training and merging results in 
+a series of mixture models as shown in the Figure~\ref{Fig:series}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/seriesofmodels}
+\caption[Series of Mixture models after mergiing and retraining.]
+{Series of mixture models resulting because of the progressive 
+merging of the mixture components and retraining of the mixture 
+model.} 
+\label{Fig:series}
+\end{figure}
+
+The Figure~\ref{Fig:series} shows snapshot of our algorithm where 
+two components in a mixture model with 7 components are merged 
+to generate a mixture model with 6 components and then five components
+until the number of components is 1. This series of mixture models
+can be used with any model selection criteria such as cross-validation,
+AIC, BIC, and MDL to choose a model of suitable complexity.
+In~\cite{adhikari12ds}, we have used ten--fold cross-validation 
+to select model of appropriate complexity. We calculate likelihood of 
+each mixture in the series on both training and validation sets.
+We then select the model that generalizes better on the validation
+set taking parsimony into account, i.e., if two models produces 
+comparable results, we select the simple model~\cite{zellner2001simplicity}.
+In addition to the gain in computational efficiency, the simple models
+are also easier to interpret, and understandable to the domain 
+experts~\cite{Hollmen2007a}.
+
+
+One important property of the EM algorithm is that EM 
+algorithm is deterministic for given initialization and
+given dataset~\cite{McLachlan2008emext}. In other words, 
+if we run EM algorithm on the same data with same 
+initialization it converges to the same model.  When  
+the mixture components are merged, the initialization for 
+the EM algorithm is the same thus avoiding multiple restarts 
+required in~\cite{chickering1997}~and~\cite{tikka2007b}.
+Furthermore, Convergence of EM algorithm is accelerated 
+when it is initialized  from a merged model than EM 
+algorithm initialized at random because the merged model 
+resembles the final trained model. In~\citepub{j1}, 
+we have shown that EM algorithm converges approximately 
+ten to fifty times faster when initialized from  merged 
+model. Similarly, model produced in the series of models
+are similar to each-other except for the number of 
+components thus allowing comparison among similar models 
+for model selection but with different number of 
+components. This avoids the situation when mixture model
+with some components have been stuck in local minima while 
+models with other components reach global optima. 
+This creates a bias in comparison among models with different 
+componentsin similar vein as 'unfortunate split' in 
+cross-validation literature. The principal focus in~\citepub{j1}
+is generating series of mixture models for model selection 
+and not on avoiding local optima or proposing a new 
+model selection criteria.
+
+
+
+%We capitalize on this property of EM 
+%algorithm and merging of mixture components to develop a computationally
+%efficient algorithm for model selection.
+%Given two probability distributions $P$ and $Q$ on a finite set $\boldsymbol{X}$,
+%KL divergence can be mathematically defined as:
+%\begin{eqnarray}
+%\label{eq:kldiv}
+% \mathcal{D}_{KL}(P \mid \mid Q)=\displaystyle\sum_{x \in \boldsymbol{X}} P(x) \log \frac{P(x)}{Q(x)}
+%\end{eqnarray}
+%However, 
+%EM algorithm can get stuck in local optima~\cite{McLachlan2008emext}. 
+%The EM algorithm is sensitive to initializations but is deterministic 
+%for a given initialization and a given dataset~\cite{McLachlan2008emext}. 

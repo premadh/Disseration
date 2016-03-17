@@ -1,0 +1,1060 @@
+\begin{thebibliography}{100}
+
+\bibitem{adhikari2010b}
+P.~R. Adhikari and J.~Hollm\'{e}n.
+\newblock {P}reservation of {S}tatistically {S}ignificant patterns in
+  {M}ultiresolution 0-1 {D}ata.
+\newblock In T.~Dijkstra, E.~Tsivtsivadze, E.~Marchiori, and T.~Heskes,
+  editors, {\em Proceedings of the 5th IAPR International Conference on Pattern
+  Recgnition in Bioinformatics}, volume 6282 of {\em Lecture Notes in Computer
+  Science}, pages 86--97, Nijmegen, The Netherlands, September 2010. Springer
+  Berlin / Heidelberg.
+
+\bibitem{adhikari12ds}
+P.~R. Adhikari and J.~Hollm{\'e}n.
+\newblock {F}ast {P}rogressive {T}raining of {M}ixture {M}odels for {M}odel
+  {S}election.
+\newblock In J.-G. Ganascia, P.~Lenca, and J.-M. Petit, editors, {\em
+  Proceedings of Fifteenth International Conference on Discovery Science (DS
+  2012)}, volume 7569 of {\em Lecture Notes in Artificial Intelligence}, pages
+  194--208. Springer-Verlag, October 2012.
+
+\bibitem{aggarwal2007data}
+C.~C. Aggarwal.
+\newblock {\em {D}ata {S}treams: {M}odels and {A}lgorithms}, volume~31 of {\em
+  Advances in Database Systems}.
+\newblock Springer, illustrated edition, 2007.
+
+\bibitem{agrawal1993}
+R.~Agrawal, T.~Imieli\'{n}ski, and A.~Swami.
+\newblock Mining association rules between sets of items in large databases.
+\newblock In P.~Buneman and S.~Jajodia, editors, {\em SIGMOD '93: Proceedings
+  of the 1993 ACM SIGMOD International Conference on Management of Data}, pages
+  207--216, New York, NY, USA, 1993. ACM.
+
+\bibitem{agrawal94}
+R.~Agrawal and R.~Srikant.
+\newblock {F}ast {A}lgorithms for {M}ining {A}ssociation {R}ules in {L}arge
+  {D}atabases.
+\newblock In J.~B. Bocca, M.~Jarke, and C.~Zaniolo, editors, {\em {P}roceedings
+  of the 20th {I}nternational {C}onference on {V}ery {L}arge {D}ata {B}ases},
+  pages 487--499, San Francisco, CA, USA, 12-15 September 1994. Morgan Kaufmann
+  Publishers Inc.
+
+\bibitem{akaike1973}
+H.~Akaike.
+\newblock Information theory and an extension of the maximum likelihood
+  principle.
+\newblock In B.~N. Petrov and F.~Csaki, editors, {\em 2nd International
+  Symposium on Information Theory}, pages 267--281. Akademiai Kiado, 1973.
+
+\bibitem{ando2010bayesian}
+T.~Ando.
+\newblock {\em {B}ayesian {M}odel {S}election and {S}tatistical {M}odeling}.
+\newblock {S}tatistics: {A} {S}eries of {T}extbooks and {M}onographs. Taylor \&
+  Francis, 2010.
+
+\bibitem{babaei2013}
+S.~Babaei, M.~Hulsman, M.~J.T. Reinders, and J.~de~Ridder.
+\newblock Detecting recurrent gene mutation in interaction network context
+  using multi--scale graph diffusion.
+\newblock {\em BMC Bioinformatics}, 14:29, January 2013.
+
+\bibitem{barberBRML12}
+D.~Barber.
+\newblock {\em {B}ayesian {R}easoning and {M}achine {L}earning}.
+\newblock {C}ambridge {U}niversity {P}ress, 2012.
+
+\bibitem{bargiela2003granular}
+A.~Bargiela and W.~Pedrycz.
+\newblock {\em {G}ranular {C}omputing: {A}n {I}ntroduction}.
+\newblock The Springer International Series in Engineering and Computer
+  Science. Springer US, 2003.
+
+\bibitem{barth2002multiscale}
+T.~J. Barth, T.~Chan, and R.~Haimes.
+\newblock {\em {M}ultiscale and {M}ultiresolution {M}ethods: {T}heory and
+  {A}pplications}.
+\newblock Lecture Notes in Computational Science and Engineering. Springer,
+  2002.
+
+\bibitem{pcr2003}
+J.~M.~S. Bartlett and D.~Stirling.
+\newblock {A} {S}hort {H}istory of the {P}olymerase {C}hain {R}eaction.
+\newblock In J.~M.S. Bartlett and D.~Stirling, editors, {\em PCR Protocols},
+  volume 226 of {\em Methods in Molecular Biology}, pages 3--6. Humana Press,
+  2003.
+
+\bibitem{progenetix}
+M.~Baudis.
+\newblock {O}nline database and bioinformatics toolbox to support data mining
+  in cancer cytogenetics.
+\newblock {\em Biotechniques}, 40(3):269--272, March 2006.
+
+\bibitem{baudis07}
+M.~Baudis.
+\newblock {Genomic imbalances in 5918 malignant epithelial tumors: An
+  explorative meta-analysis of chromosomal {CGH} data}.
+\newblock {\em BMC Cancer}, 7(1):226, December 2007.
+
+\bibitem{baxter08}
+R.~J. Baxter.
+\newblock {\em {Exactly Solved Models in Statistical Mechanics}}.
+\newblock Dover Publications, January 2008.
+
+\bibitem{bay01}
+S.~D. Bay and M.~J. Pazzani.
+\newblock {D}etecting {G}roup {D}ifferences: {M}ining {C}ontrast {S}ets.
+\newblock {\em Data Mining and Knowledge Discovery}, 5(3):213--246, 2001.
+
+\bibitem{bellman61}
+R.~E. Bellman.
+\newblock {\em {A}daptive control processes - {A} guided tour}.
+\newblock Princeton University Press, Princeton, New Jersey, U.S.A., 1961.
+
+\bibitem{bellot2003}
+D.~Bellot and P.~Bessi{\'ere}.
+\newblock {A}pproximate {D}iscrete {P}robability {D}istribution
+  {R}epresentation using a {M}ulti--{R}esolution {B}inary {T}ree.
+\newblock In {\em Proceedings of 15th IEEE International Conference on Tools
+  with Artificial Intelligence, 2003}, ICTAI '03, pages 498--503, 2003.
+
+\bibitem{benn1992}
+P.~A. Benn and M.~A. Perle.
+\newblock {C}hromosome staining and banding techniques.
+\newblock In D.~E. Rooney and B.~H. Czepulkowski, editors, {\em {H}uman
+  {G}enetics: {A} {P}ractical {A}pproach}, pages 57--84. IRL Press, 1992.
+
+\bibitem{bensmail97}
+H.~Bensmail, G.~Celeux, A.~E. Raftery, and C.~P. Robert.
+\newblock Inference in model-based cluster analysis.
+\newblock {\em Statistics and Computing}, 7(1):1--10, 1997.
+
+\bibitem{bianchini2006}
+M.~Bianchini, M.~Maggini, and L.~Sarti.
+\newblock {O}bject {R}ecognition {U}sing {M}ultiresolution {T}rees.
+\newblock In D-Y Yeung, J.~T. Kwok, A.~Fred, F.~Roli, and D.~Ridder, editors,
+  {\em Structural, Syntactic, and Statistical Pattern Recognition}, volume 4109
+  of {\em Lecture Notes in Computer Science}, pages 331--339. Springer Berlin
+  Heidelberg, 2006.
+
+\bibitem{biernacki2000}
+C.~Biernacki, G.~Celeux, and G.~Govaert.
+\newblock Assessing a mixture model for clustering with the integrated
+  completed likelihood.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  22(7):719--725, July 2000.
+
+\bibitem{bishop06}
+C.~M. Bishop.
+\newblock {\em {P}attern {R}ecognition and {M}achine {L}earning}.
+\newblock Springer, Secaucus, NJ, USA, 2006.
+
+\bibitem{bishop99}
+J.~F. Bishop.
+\newblock {\em {Cancer facts : a concise oncology text}}.
+\newblock Harwood Academic Publishers, Amsterdam, The Netherlands, 1999.
+
+\bibitem{brenner2000mpss}
+S.~Brenner, M.~Johnson, J.~Bridgham, G.~Golda, D.~H. Lloyd, D.~Johnson, S.~Luo,
+  S.~McCurdy, M.~Foy, M.~Ewan, R.~Roth, D.~George, S.~Eletr, G.~Albrecht,
+  E.~Vermaas, S.~R. Williams, K.~Moon, T.~Burcham, M.~Pallas, R.~B. DuBridge,
+  J.~Kirchner, K.~Fearon, J.~Mao, and K.~Corcoran.
+\newblock {G}ene expression analysis by massively parallel signature sequencing
+  ({MPSS}) on microbead arrays.
+\newblock {\em Nature Biotechnology}, 18(2000):630--634, June 2000.
+
+\bibitem{burdick01}
+D.~Burdick, M.~Calimlim, and J.~Gehrke.
+\newblock {MAFIA}: a maximal frequent itemset algorithm for transactional
+  databases.
+\newblock In D.~Georgakopoulos and A.~Buchmann, editors, {\em Proceedings of
+  17th International Conference on Data Engineering, 2001}, pages 443--452,
+  2001.
+
+\bibitem{carlson2003}
+R.~Carlson.
+\newblock {T}he pace and proliferation of biological technologies.
+\newblock {\em Biosecurity and bioterrorism : biodefense strategy, practice,
+  and science}, 1(3):203--214, 2003.
+
+\bibitem{carter1998analysis}
+D.~B. Carter.
+\newblock {\em Analysis of multiresolution data fusion techniques}.
+\newblock PhD thesis, Virginia Polytechnic Institute and State University,
+  1998.
+
+\bibitem{caruna97}
+R.~Caruana.
+\newblock {M}ultitask {L}earning.
+\newblock {\em Machine Learning}, 28(1):41--75, July 1997.
+
+\bibitem{celeux07}
+G.~Celeux.
+\newblock {M}ixture {M}odels for {C}lassification.
+\newblock In R.~Decker and H-J. Lenz, editors, {\em Advances in Data Analysis},
+  {S}tudies in {C}lassification, {D}ata {A}nalysis, and {K}nowledge
+  {O}rganization, pages 3--14. Springer Berlin Heidelberg, 2007.
+
+\bibitem{chen2008}
+J.~Chen and A.~Khalili.
+\newblock {O}rder {S}election in {F}inite {M}ixture {M}odels {W}ith a
+  {N}onsmooth {P}enalty.
+\newblock {\em Journal of the American Statistical Association},
+  103(484):1674--1683, 2008.
+
+\bibitem{cherkassky1998}
+V.~S. Cherkassky and F.~Mulier.
+\newblock {\em {L}earning from {D}ata: {C}oncepts, {T}heory, and {M}ethods}.
+\newblock John Wiley \& Sons, Inc., New York, NY, USA, first edition, 1998.
+
+\bibitem{chickering1997}
+D.~M. Chickering and D.~Heckerman.
+\newblock {E}fficient {A}pproximations for the {M}arginal {L}ikelihood of
+  {B}ayesian {N}etworks with {H}idden {V}ariables.
+\newblock {\em Machine Learning}, 29(2-3):181--212, November 1997.
+
+\bibitem{cohen2014}
+S.~M. Cohen.
+\newblock {A}ristotle's {M}etaphysics.
+\newblock In E.~N. Zalta, editor, {\em {T}he {S}tanford {E}ncyclopedia of
+  {P}hilosophy}. {S}tanford Online, spring 2014 edition, 2014.
+
+\bibitem{cour2011}
+T.~Cour, B.~Sapp, and B.~Taskar.
+\newblock {L}earning from {P}artial {L}abels.
+\newblock {\em Journal of Machine Learning Research}, 12:1501--1536, July 2011.
+
+\bibitem{crammer08}
+K.~Crammer, M.~Kearns, and J.~Wortman.
+\newblock {L}earning from {M}ultiple {S}ources.
+\newblock {\em Journal of Machine Learning Research}, 9:1757--1774, August
+  2008.
+
+\bibitem{merriam02}
+``datum data''.
+\newblock {\em {M}erriam-{W}ebster's dictionary of {E}nglish usage}.
+\newblock Merriam-Webster, Springfield, Massachusetts, 2002.
+
+\bibitem{ridder07}
+J.~de~Ridder, J.~Kool, A.~Uren, J.~Bot, L.~Wessels, and M.~J.~T. Reinders.
+\newblock {C}o--occurrence analysis of insertional mutagenesis data reveals
+  cooperating oncogenes.
+\newblock {\em Bioinformatics}, 23(13):i133--41, July 2007.
+
+\bibitem{expectmax}
+A.~P. Dempster, N.~M. Laird, and D.~B. Rubin.
+\newblock {M}aximum likelihood from incomplete data via the {EM} algorithm.
+\newblock {\em Journal of the Royal Statistical Society, Series B
+  (Methodological)}, 39(1):1--38, 1977.
+
+\bibitem{dizio2004}
+M.~Di~Zio, M.~Scanu, L.~Coppola, O.~Luzi, and A.~Ponti.
+\newblock Bayesian networks for imputation.
+\newblock {\em Journal of the Royal Statistical Society: Series A (Statistics
+  in Society)}, 167(2):309--322, May 2004.
+
+\bibitem{united2009new}
+U.S. DOE.
+\newblock {\em {N}ew {F}rontiers in {C}haracterizing {B}iological {S}ystems:
+  {R}eport from the {M}ay 2009 {W}orkshop}.
+\newblock DOE/SC-0121. U.S. Department of Energy, Office of Science, 2009.
+
+\bibitem{durkin07}
+S.~G. Durkin and T.~W. Glover.
+\newblock {C}hromosome {F}ragile {S}ites.
+\newblock {\em Annual Review of Genetics}, 41(1):169--192, 2007.
+
+\bibitem{elden2007}
+L.~Eld\'en.
+\newblock {\em {M}atrix {M}ethods in {D}ata {M}ining and {P}attern
+  {R}ecognition}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, PA,
+  USA, 2007.
+
+\bibitem{measureimprove}
+Electronics, Electrical Engineering Laboratory (National~Institute
+  of~Standards, and Technology).
+\newblock {\em {M}easurements for competitiveness in electronics [microform] /
+  prepared by the {E}lectronics and {E}lectrical {E}ngineering {L}aboratory}.
+\newblock The Laboratory ; National Technical Information Service [distributor
+  Gaithersburg, MD : Springfield, VA, first edition, 1993.
+
+\bibitem{everittmixdist}
+B.~S. Everitt and D.~J. Hand.
+\newblock {\em {F}inite mixture distributions}.
+\newblock Chapman and Hall, London; New York, 1981.
+
+\bibitem{Figueiredo2002}
+M.~A.~T. Figueiredo and A.~K. Jain.
+\newblock {U}nsupervised {L}earning of {F}inite {M}ixture {M}odels.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  24(3):381--396, March 2002.
+
+\bibitem{fraley1998}
+C.~Fraley and A.~E. Raftery.
+\newblock {H}ow {M}any {C}lusters? {W}hich {C}lustering {M}ethod? {A}nswers
+  {V}ia {M}odel-{B}ased {C}luster {A}nalysis.
+\newblock {\em The Computer Journal}, 41(8):578--588, 1998.
+
+\bibitem{furnas86}
+G.~W. Furnas.
+\newblock {G}eneralized {F}isheye {V}iews.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '86, pages 16--23, New York, NY, USA, 1986. ACM.
+
+\bibitem{futreal2004}
+P.~A. Futreal, L.~Coin, M.~Marshall, T.~Down, T.~Hubbard, R.~Wooster,
+  N.~Rahman, and M.~R. Stratton.
+\newblock {A} census of human cancer genes.
+\newblock {\em Nature reviews. Cancer}, 4(3):177--183, Mar 2004.
+
+\bibitem{gaber2005}
+M.~M. Gaber, A.~Zaslavsky, and S.~Krishnaswamy.
+\newblock {M}ining {D}ata {S}treams: {A} {R}eview.
+\newblock {\em SIGMOD Record}, 34(2):18--26, June 2005.
+
+\bibitem{gallo2008}
+A.~Gallo, P.~Miettinen, and H.~Mannila.
+\newblock {\em {F}inding {S}ubgroups having {S}everal {D}escriptions:
+  {A}lgorithms for {R}edescription {M}ining}, chapter~29, pages 334--345.
+\newblock SIAM, 2008.
+
+\bibitem{gama2014}
+J.~Gama, I.~\v{Z}liobait\.{e}, A.~Bifet, M.~Pechenizkiy, and A.~Bouchachia.
+\newblock {A} {S}urvey on {C}oncept {D}rift {A}daptation.
+\newblock {\em ACM Computing Survey}, 46(4):44:1--44:37, March 2014.
+
+\bibitem{gamberger02}
+D.~Gamberger and N.~Lavra\v{c}.
+\newblock {E}xpert-{G}uided {S}ubgroup {D}iscovery: {M}ethodology and
+  {A}pplication.
+\newblock {\em Journal of Artificial Intelligence Research}, 17(1):501--527,
+  2002.
+
+\bibitem{Garland99}
+M.~Garland.
+\newblock {M}ultiresolution {M}odeling: {S}urvey \& {F}uture {O}pportunities.
+\newblock In {\em Eurographics '99 -- State of the Art Reports}, pages
+  111--131, 1999.
+
+\bibitem{garriga2011banded}
+G.~C. Garriga, E.~Junttila, and H.~Mannila.
+\newblock Banded structure in binary matrices.
+\newblock {\em Knowledge and Information Systems}, 28(1):197--226, 2011.
+
+\bibitem{geisser1974}
+S.~Geisser.
+\newblock {A} {P}redictive {A}pproach to the {R}andom {E}ffect {M}odel.
+\newblock {\em Biometrika}, 61(1):101--107, 1974.
+
+\bibitem{so49866}
+G.~Giancarlo, G.~Wagner, and M.~Marten Sinderen~van.
+\newblock A formal theory of conceptual modeling universals.
+\newblock In {\em 1st Intl. Workshop on Philosophy and Informatics, WSPI 2004},
+  volume 112 of {\em CEUR workshop proceedings}. DFKI, 2004.
+
+\bibitem{gilbert1973nucleotide}
+W.~Gilbert and A.~Maxam.
+\newblock {T}he {N}ucleotide {S}equence of the lac {O}perator.
+\newblock {\em Proceedings of the National Academy of Sciences}, 70(12, Part
+  I):3581--3584, December 1973.
+
+\bibitem{gionis07ca}
+A.~Gionis, H.~Mannila, and P.~Tsaparas.
+\newblock {C}lustering aggregation.
+\newblock {\em ACM Transactions on Knowledge Discovery from Data},
+  1(1):341--352, March 2007.
+
+\bibitem{glover2005}
+T.~W. Glover, M.~F. Arlt, A.~M. Casper, and S.~G. Durkin.
+\newblock {M}echanisms of common fragile site instability.
+\newblock {\em Human Molecular Genetics}, 14(Supplement 2):R197--R205, 2005.
+
+\bibitem{goodman97math}
+I.~R. Goodman, R.~P. Mahler, and H.~T. Nguyen.
+\newblock {\em {M}athematics of {D}ata {F}usion}.
+\newblock Kluwer Academic Publishers, Norwell, MA, USA, 1997.
+
+\bibitem{gopal2005}
+P.~V. Gopalacharyulu, E.~Lindfors, C.~Bounsaythip, T.~Kivioja, L.~Yetu\-kuri,
+  J.~Hollm\'en, and M.~Ore\v{s}i\v{c}.
+\newblock Data integration and visualization system for enabling conceptual
+  biology.
+\newblock {\em Bioinformatics}, 21(Suppl.1):i177--i185, 2005.
+
+\bibitem{gruber1993}
+T.~R. Gruber.
+\newblock {A} translation approach to portable ontology specifications.
+\newblock {\em Knowledge Acquisition}, 5(2):199 -- 220, 1993.
+
+\bibitem{guyon2003}
+I.~Guyon and A.~Elisseeff.
+\newblock {A}n {I}ntroduction to {V}ariable and {F}eature {S}election.
+\newblock {\em Journal of Machine Learning Research}, 3:1157--1182, March 2003.
+
+\bibitem{hammoud2000}
+R.~Hammoud and R.~Mohr.
+\newblock Biometrics: Promising frontiers for emerging identification market.
+\newblock Technical Report 3905, Unit\'{e} de recherche INRIA Rh\v{o}ne-Alpes,
+  655, avenue de l'Europe, 38330 MONTBONNOT ST MARTIN (France), March 2000.
+
+\bibitem{han2007}
+J.~Han, H.~Cheng, D.~Xin, and X.~Yan.
+\newblock Frequent pattern mining: current status and future directions.
+\newblock {\em Data Mining and Knowledge Discovery}, 15(1):55--86, January
+  2007.
+
+\bibitem{hand01}
+D.~Hand, H.~Mannila, and P.~Smyth.
+\newblock {\em {P}rinciples of {D}ata {M}ining}.
+\newblock {A}daptive {C}omputation and {M}achine {L}earning {S}eries. {MIT}
+  Press, 2001.
+
+\bibitem{hastie09}
+T.~Hastie, R.~Tibshirani, and J.~Friedman.
+\newblock {\em {T}he {E}lements of {S}tatistical {L}earning: {D}ata {M}ining,
+  {I}nference, and {P}rediction.}
+\newblock Springer, second edition, February 2009.
+
+\bibitem{he2000wavelet}
+T.~X. He.
+\newblock {\em {W}avelet {A}nalysis and {M}ultiresolution {M}ethods}.
+\newblock Lecture Notes in Pure and Applied Mathematics. Taylor \& Francis,
+  2000.
+
+\bibitem{heckerman1999}
+D.~Heckerman.
+\newblock {A} {T}utorial on {L}earning {W}ith {B}ayesian {N}etworks.
+\newblock In M.~I. Jordan, editor, {\em {L}earning in graphical models}, pages
+  301--354. MIT Press, USA, 1999.
+
+\bibitem{franciso11}
+F.~Herrera, C.~J. Carmona, P.~Gonz\'{a}lez, and M.~Jesus.
+\newblock An overview on subgroup discovery: foundations and applications.
+\newblock {\em Knowledge and Information Systems}, 29(3):495--525, 2011.
+
+\bibitem{hipp00}
+J.~Hipp, U.~G\"{u}ntzer, and G.~Nakhaeizadeh.
+\newblock {A}lgorithms for {A}ssociation {R}ule {M}ining --- a {G}eneral
+  {S}urvey and {C}omparison.
+\newblock {\em SIGKDD Explorations Newsletter}, 2(1):58--64, June 2000.
+
+\bibitem{Hollmen2007a}
+J.~Hollm\'en and J.~Tikka.
+\newblock Compact and understandable descriptions of mixture of {B}ernoulli
+  distributions.
+\newblock In M.R. Berthold, J.~Shawe-Taylor, and N.~Lavra\v{c}, editors, {\em
+  Proceedings of the 7th International Symposium on Intelligent Data Analysis
+  (IDA 2007)}, volume 4723 of {\em Lecture Notes in Computer Science}, pages
+  1--12, Ljubljana, Slovenia, September 2007. Springer-Verlag.
+
+\bibitem{howe08}
+D.~Howe, M.~Costanzo, P.~Fey, T.~Gojobori, L.~Hannick, W.~Hide, D.~P. Hill,
+  R.~Kania, M.~Schaeffer, S.~S. Pierre, S.~Twigger, O.~White, and S.~Y. Rhee.
+\newblock {B}ig data: {T}he future of biocuration.
+\newblock {\em Nature}, 455(7209):47--50, 2008.
+
+\bibitem{huang2013model}
+T.~Huang, H.~Peng, and K.~Zhang.
+\newblock {M}odel {S}election for {G}aussian {M}ixture {M}odels.
+\newblock {\em arXiv preprint arXiv:1301.3558}, 2013.
+
+\bibitem{hughes68}
+G.~Hughes.
+\newblock {O}n the {M}ean {A}ccuracy of {S}tatistical {P}attern {R}ecognizers.
+\newblock {\em IEEE Transactions on Information Theory}, 14(1):55--63, January
+  1968.
+
+\bibitem{hullermeier2006}
+E.~H\"{u}llermeier and J.~Beringer.
+\newblock {L}earning from {A}mbiguously {L}abeled {E}xamples.
+\newblock {\em Intelligent Data Analysis}, 10(5):419--439, September 2006.
+
+\bibitem{huopaniemi10ismb}
+I.~Huopaniemi, T.~Suvitaival, J.~Nikkil{\"a}, M.~Ore{\v{s}}i{\v{c}}, and
+  S.~Kaski.
+\newblock Multivariate multi-way analysis of multi-source data.
+\newblock {\em Bioinformatics}, 26:i391--i398, 2010.
+
+\bibitem{hussain11}
+A.~Hussain and A.~Visilsoanathan.
+\newblock {M}ultiresolution {S}emantic {V}isualization of {N}etwork {T}raffic.
+\newblock In {\em {P}roceedings of the 2011 {IEEE} {F}ifth {I}nternational
+  {C}onference on {S}emantic {C}omputing}, ICSC '11, pages 364--367,
+  Washington, DC, USA, 2011. IEEE Computer Society.
+
+\bibitem{iske2004}
+A.~Iske.
+\newblock {\em {M}ultiresolution {M}ethods in {S}cattered {D}ata {M}odelling}.
+\newblock Springer Berlin Heidelberg, first edition, 2004.
+
+\bibitem{jawerth94}
+B.~Jawerth and W.~Sweldens.
+\newblock {A}n {O}verview of {W}avelet {B}ased {M}ultiresolution {A}nalyses.
+\newblock {\em SIAM Review}, 36(3):377--412, September 1994.
+
+\bibitem{jovanoski01}
+V.~Jovanoski and N.~Lavra\v{c}.
+\newblock {C}lassification {R}ule {L}earning with {APRIORI}--{C}.
+\newblock In P.~Brazdil and A.~Jorge, editors, {\em Progress in Artificial
+  Intelligence}, volume 2258 of {\em Lecture Notes in Computer Science}, pages
+  44--51. Springer Berlin Heidelberg, 2001.
+
+\bibitem{juang85}
+B.~H. Juang and L.~R. Rabiner.
+\newblock {A} probabilistic distance measure for {H}idden {M}arkov {M}odels.
+\newblock {\em AT\&T Technical Journal}, 64(2):391--408, February 1985.
+
+\bibitem{kadane04}
+J.~B. Kadane and N.~A. Lazar.
+\newblock {M}ethods and {C}riteria for {M}odel {S}election.
+\newblock {\em Journal of the American Statistical Association},
+  99(465):279--290, March 2004.
+
+\bibitem{kallioniemi92}
+A.~Kallioniemi, O.~P. Kallioniemi, D.~Sudar, D.~Rutovitz, J.~W. Gray,
+  F.~Waldman, and D.~Pinkel.
+\newblock {C}omparative genomic hybridization for molecular cytogenetic
+  analysis of solid tumors.
+\newblock {\em SCIENCE}, 258(5083):818--821, October 30 1992.
+
+\bibitem{karciauskas2007}
+G.~Kar\v{c}iauskas.
+\newblock {L}earning of {L}atent {C}lass {M}odels by {S}plitting and {M}erging
+  {C}omponents.
+\newblock In P.~Lucas, J.~A. G\'{o}mez, and A.~Salmer\'{o}n, editors, {\em
+  Advances in Probabilistic Graphical Models}, volume 214 of {\em Studies in
+  Fuzziness and Soft Computing}, pages 235--251. Springer Berlin Heidelberg,
+  2007.
+
+\bibitem{kettunen2003b}
+E.~Kettunen, A.~G. Nicholson, B.~Nagy, J.~K. Sepp\"anen, T.~Ollikainen,
+  G.~Ladas, V.~Kinnula, M.~Dusmet, S.~Nordling, J.~Hollm\'en, D.~Kamel,
+  P.~Goldstraw, and S.~Knuutila.
+\newblock {L1CAM}, {INP10}, {P-cadherin}, {tPA} and {ITGB4} over-expression in
+  malignant pleural mesotheliomas revealed by combined use of {cDNA} and tissue
+  microarray.
+\newblock {\em Carcinogenesis}, 26(1):17--25, September 2005.
+
+\bibitem{khoury2013}
+J.~D. Khoury, N.~M. Tannir, M.~D. Williams, Y.~Chen, H.~Yao, J.~Zhang, E.~J.
+  Thompson, F.~Meric-Bernstam, L.~J. Medeiros, J.~N. Weinstein, et~al.
+\newblock {T}he {L}andscape of {DNA} {V}irus {A}ssociations {A}cross {H}uman
+  {M}alignant {C}ancers {U}sing {RNA}-seq: {A}n {A}nalysis of 3,775 {C}ases.
+\newblock {\em Journal of Virology}, 87(16):8916--8926, 2013.
+
+\bibitem{kim2003}
+P.~M. Kim.
+\newblock {\em {U}nderstanding {S}ubsystems in {B}iology through
+  {D}imensionality {R}eduction, {G}raph {P}artitioning and {A}nalytical
+  {M}odeling}.
+\newblock PhD thesis, Massachusetts Institute of Technology, February 2003.
+
+\bibitem{king2002genetic}
+R.~A. King, J.~I. Rotter, and A.~G. Motulsky, editors.
+\newblock {\em {T}he {G}enetic {B}asis of {C}ommon {D}iseases.}
+\newblock Oxford Monographs on Medical Genetics. Oxford University Press,
+  second edition, 2002.
+
+\bibitem{kirsch1993causes}
+I.~R. Kirsch.
+\newblock {\em {The causes and consequences of chromosomal aberrations}}.
+\newblock CRC Press, 1993.
+
+\bibitem{klein2012science}
+H.~A. Klein.
+\newblock {\em {T}he {S}cience of {M}easurement: {A} {H}istorical {S}urvey}.
+\newblock Dover Books on Mathematics. Dover Publications, 2012.
+
+\bibitem{klemettinen94}
+M.~Klemettinen, H.~Mannila, P.~Ronkainen, H.~Toivonen, and A.~I. Verkamo.
+\newblock {F}inding {I}nteresting {R}ules from {L}arge {S}ets of {D}iscovered
+  {A}ssociation {R}ules.
+\newblock In N.~R. Adam, B.~K. Bhargava, and Y.~Yesha, editors, {\em
+  {P}roceedings of the {T}hird {I}nternational {C}onference on {I}nformation
+  and {K}nowledge {M}anagement}, CIKM '94, pages 401--407, New York, NY, USA,
+  1994. ACM.
+
+\bibitem{knuutila2000}
+S.~Knuutila, K.~Autio, and Y.~Aalto.
+\newblock {O}nline {A}ccess to {CGH} {D}ata of {DNA} {S}equence {C}opy {N}umber
+  {C}hanges.
+\newblock {\em American Journal of Pathology}, 157(2):689--689, August 2000.
+
+\bibitem{koikkalainen94}
+P.~Koikkalainen.
+\newblock {P}rogress with the {T}ree-{S}tructured {S}elf-{O}rganizing {M}ap.
+\newblock In A.~G. Cohn, editor, {\em In Proceedings on 11th European
+  Conference on Artificial Intelligence ({ECAI})}, pages 211--215. European
+  Committee for Artificial Intelligence (ECCAI), John Wiley \& Sons, Ltd.,
+  1994.
+
+\bibitem{kullbackleibler51kl}
+S.~Kullback and R.~A. Leibler.
+\newblock {O}n {I}nformation and {S}ufficiency.
+\newblock {\em Annals of Mathematical Statistics}, 22(1):79--86, March 1951.
+
+\bibitem{lahiri2001model}
+P.~Lahiri, editor.
+\newblock {\em {M}odel {S}election}.
+\newblock Institute of Mathematical Statistics Lecture Notes Monograph.
+  Institute of Mathematical Statistics, illustrated edition, 2001.
+
+\bibitem{lavrac2011}
+N.~Lavra\v{c}, A.~Vavpetič, L.~Soldatova, I.~Trajkovski, and P.~Kralj~Novak.
+\newblock {U}sing {O}ntologies in {S}emantic {D}ata {M}ining with {SEGS} and
+  {g-{SEGS}}.
+\newblock In T.~Elomaa, J.~Hollm\'{e}n, and H.~Mannila, editors, {\em
+  {P}roceedings of the {I}nternational {C}onference on {D}iscovery {S}cience
+  ({DS} '11)}, volume 6926 of {\em Lecture Notes in Computer Science}, pages
+  165--178. Springer Berlin Heidelberg, 2011.
+
+\bibitem{Lindeberg94b}
+T.~Lindeberg.
+\newblock {S}cale-space theory: {A} basic tool for analysing structures at
+  different scales.
+\newblock {\em Journal of Applied Statistics}, 21(2):224--270, 1994.
+
+\bibitem{lindeberg94}
+T.~Lindeberg.
+\newblock {\em {S}cale-{S}pace {T}heory in {C}omputer {V}ision}.
+\newblock Kluwer Academic Publishers, Norwell, MA, USA, 1994.
+
+\bibitem{liu98}
+B.~Liu, W.~Hsu, and Y.~Ma.
+\newblock {I}ntegrating {C}lassification and {A}ssociation {R}ule {M}ining.
+\newblock In {\em {P}roceedings of the 4th international conference on
+  {K}nowledge {D}iscovery and {D}ata mining ({KDD}'98)}, pages 80--86. AAAI
+  Press, August 1998.
+
+\bibitem{liu2012}
+L.~Liu, Y.~Li, S.~Li, N.~Hu, Y.~He, R.~Pong, D.~Lin, L.~Lu, and M.~Law.
+\newblock {C}omparison of {N}ext-{G}eneration {S}equencing {S}ystems.
+\newblock {\em Journal of Biomedicine and Biotechnology}, 2012:1--11, 2012.
+
+\bibitem{lockhart96}
+D.~J. Lockhart, H.~Dong, M.~C. Byrne, M.~T. Follettie, M.~V. Gallo, M.~S. Chee,
+  M.~Mittmann, C.~Wang, M.~Kobayashi, H.~Horton, and E.~L. Brown.
+\newblock {E}xpression monitoring by hybridization to high-density
+  oligonucleotide arrays.
+\newblock {\em Nature Biotechnology}, 14(13):1675--1680, 1996.
+
+\bibitem{lynch08}
+C.~Lynch.
+\newblock {B}ig data: {H}ow do your data grow?
+\newblock {\em Nature}, 455(7209):28--29, September 2008.
+
+\bibitem{mallat89}
+S.~G. Mallat.
+\newblock A theory for multiresolution signal decomposition: the wavelet
+  representation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  11(7):674--693, July 1989.
+
+\bibitem{mannila1994}
+H.~Mannila, H.~Toivonen, and A.~I. Verkamo.
+\newblock Efficient algorithms for discovering association rules.
+\newblock In U.~M. Fayyad and R.~Uthurusamy, editors, {\em {AAAI} Workshop on
+  Knowledge Discovery in Databases (KDD-94)}, pages 181--192, Seattle,
+  Washington, 1994. AAAI Press.
+
+\bibitem{manning1999foundations}
+C.~D. Manning and H.~Sch{\"u}tze.
+\newblock {\em {F}oundations of {S}tatistical {N}atural {L}anguage
+  {P}rocessing}.
+\newblock MIT Press, illustrated edition, 1999.
+
+\bibitem{manyika11frontier}
+J.~Manyika, M.~Chui, B.~Brown, J.~Bughin, R.~Dobbs, C.~Roxburgh, and A.~H.
+  Byers.
+\newblock {B}ig data: The next frontier for innovation, competition, and
+  productivity.
+\newblock Technical report, McKinsey Global Institute, June 2011.
+
+\bibitem{mardis08}
+E.~R. Mardis.
+\newblock {N}ext-generation {DNA} sequencing methods.
+\newblock {\em Annual Review of Genomics and Human Genetics}, 9(1):387--402,
+  June 2008.
+
+\bibitem{mardis2011}
+E.~R. Mardis.
+\newblock {A} decade's perspective on {DNA} sequencing technology.
+\newblock {\em Nature}, 470(7333):198--203, February 2011.
+
+\bibitem{marx2013}
+V.~Marx.
+\newblock {B}iology: {T}he big challenges of big data.
+\newblock {\em Nature}, 498(7453):255--260, June 2013.
+
+\bibitem{McLachlan1987}
+G.~J. McLachlan.
+\newblock {O}n {B}ootstrapping the {L}ikelihood {R}atio {T}est {S}tastistic for
+  the {N}umber of {C}omponents in a {N}ormal {M}ixture.
+\newblock {\em Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)}, 36(3):318--324, 1987.
+
+\bibitem{mclachlan1988mixture}
+G.~J. McLachlan and K.~E. Basford.
+\newblock {M}ixture models. {I}nference and applications to clustering.
+\newblock {\em Statistics: Textbooks and Monographs, New York}, 1, 1988.
+
+\bibitem{McLachlan2008emext}
+G.~J. McLachlan and T.~Krishnan.
+\newblock {\em {T}he {EM} {A}lgorithm and {E}xtensions}.
+\newblock Wiley series in probability and statistics. Wiley, second edition,
+  2008.
+
+\bibitem{mclachlanfmm}
+G.~J. McLachlan and D.~Peel.
+\newblock {\em {F}inite mixture models}, volume 299 of {\em {P}robability and
+  {S}tatistics -- {A}pplied {P}robability and {S}tatistics {S}ection}.
+\newblock Wiley, 2000.
+
+\bibitem{mcshea1991}
+D.~W. Mcshea.
+\newblock {C}omplexity and evolution: {W}hat everybody knows.
+\newblock {\em Biology and Philosophy}, 6(3):303--324, July 1991.
+
+\bibitem{meila2000}
+M.~Meila and M.~I. Jordan.
+\newblock {L}earning with {M}ixtures of {T}rees.
+\newblock {\em Journal of Machine Learning Research}, 1:1--48, Oct 2000.
+
+\bibitem{melnykov2010finite}
+V.~Melnykov and R.~Maitra.
+\newblock {F}inite {M}ixture {M}odels and {M}odel--{B}ased {C}lustering.
+\newblock {\em Statistics Surveys}, 4(1):80--116, 2010.
+
+\bibitem{milanfar2010super}
+P.~Milanfar.
+\newblock {\em Super-resolution imaging}.
+\newblock CRC Press, 2010.
+
+\bibitem{mitchell97}
+T.~M. Mitchell.
+\newblock {\em {M}achine {L}earning}.
+\newblock McGraw-Hill, New York, 1997.
+
+\bibitem{monsteller1968}
+F.~Monsteller and J.~W. Tukey.
+\newblock Data analysis, including statistics.
+\newblock In G.~Lindzey and E.~Aronson, editors, {\em {H}andbook of {S}ocial
+  {P}sychology}, volume~2, chapter~10, pages 80--203. Addison-Wesley, Reading,
+  MA, 1968.
+
+\bibitem{moore99veryfast}
+A.~Moore.
+\newblock {V}ery {F}ast {EM}-based {M}ixture {M}odel {C}lustering {U}sing
+  {M}ultiresolution {KD}--trees.
+\newblock In M.~Kearns and D.~Cohn, editors, {\em {A}dvances in {N}eural
+  {I}nformation {P}rocessing {S}ystems}, pages 543--549. Morgan Kaufman, April
+  1999.
+
+\bibitem{moore1965}
+G.~E. Moore.
+\newblock {C}ramming {M}ore {C}omponents onto {I}ntegrated {C}ircuits.
+\newblock {\em Electronics}, 38(8):114--117, April 1965.
+
+\bibitem{mukherjee13}
+D.~Mukherjee, Q.~M.~J. Wu, and T.~M. Nguyen.
+\newblock {M}ultiresolution {B}ased {G}aussian {M}ixture {M}odel for
+  {B}ackground {S}uppression.
+\newblock {\em IEEE Transactions on Image Processing}, 22(12):5022--5035, 2013.
+
+\bibitem{myllykangas06}
+S.~Myllykangas, J.~Himberg, T.~B{\"o}hling, B.~Nagy, J.~Hollm{\'e}n, and
+  S.~Knuutila.
+\newblock {DNA} copy number amplification profiling of human neoplasms.
+\newblock {\em Oncogene}, 25(55):7324--7332, November 2006.
+
+\bibitem{myllykangas08}
+S.~Myllykangas, J.~Tikka, T.~B{\"o}hling, S.~Knuutila, and J.~Hollm{\'e}n.
+\newblock Classification of human cancers based on {DNA} copy number
+  amplification modeling.
+\newblock {\em BMC Medical Genomics}, 1(15), May 2008.
+
+\bibitem{pancancer}
+The Cancer Genome Atlas~Research Network, J.~N. Weinstein, E.~A. Collisson,
+  G.~B. Mills, K.~R. Shaw, B.~A. Ozenberger, K.~Ellrott, I.~Shmulevich,
+  C.~Sander, and J.~M. Stuart.
+\newblock {T}he {C}ancer {G}enome {A}tlas {P}an-{C}ancer analysis project.
+\newblock {\em Nature Genetics}, 45(10):1113--1120, September 2013.
+
+\bibitem{ng03robust}
+S-K. Ng and G.~J. McLachlan.
+\newblock {R}obust {E}stimation in {G}aussian {M}ixtures {U}sing
+  {M}ultiresolution {K}d-trees.
+\newblock In C.~Sun, H.~Talbot, S.~Ourselin, and T.~Adriaansen, editors, {\em
+  {P}roceedings of the 7th {I}nternational {C}onference on {D}igital {I}mage
+  {C}omputing: {T}echniques and {A}pplications}, pages 145--154. CSIRO
+  Publishing, 2003.
+
+\bibitem{novak09}
+P.~Novak, N.~Lavra\v{c}, and G.~I. Webb.
+\newblock {S}upervised {D}escriptive {R}ule {D}iscovery: {A} {U}nifying
+  {S}urvey of {C}ontrast {S}et, {E}merging {P}attern and {S}ubgroup {M}ining.
+\newblock {\em Journal of Machine Learning Research}, 10:377--403, February
+  2009.
+
+\bibitem{obe2007chromosomal}
+G.~Obe and Vijayalaxmi.
+\newblock {\em {Chromosomal alterations: methods, results, and importance in
+  human health}}.
+\newblock Springer, 2007.
+
+\bibitem{oliveira05}
+A.~Oliveira-Brochado and F.~V. Martins.
+\newblock {A}ssessing the {N}umber of {C}omponents in {M}ixture {M}odels: a
+  {R}eview.
+\newblock FEP Working Papers 194, Universidade do Porto, Faculdade de Economia
+  do Porto, November 2005.
+
+\bibitem{panov2012}
+P.~Panov.
+\newblock {\em {A} {M}odular {O}ntology of {D}ata {M}ining}.
+\newblock Doctoral dissertation, Jo\v{z}ef Stefan International Postgraduate
+  School, July 2012.
+
+\bibitem{piatetsky91b}
+G.~Piatetsky-Shapiro.
+\newblock Discovery, {A}nalysis, and {P}resentation of {S}trong {R}ules.
+\newblock In G.~Piatetsky-Shapiro and W.~J. Frawley, editors, {\em {K}nowledge
+  {D}iscovery in {D}atabases}. AAAI/MIT Press, 1991.
+
+\bibitem{pinkel98}
+D.~Pinkel, R.~Segraves, D.~Sudar, S.~Clark, I.~Poole, D.~Kowbel, C.~Collins,
+  W.~L. Kuo, C.~Chen, Y.~Zhai, S.~H. Dairkee, B.~M. Ljung, J.~W. Gray, and
+  D.~G. Albertson.
+\newblock {H}igh resolution analysis of {DNA} copy number variation using
+  comparative genomic hybridization to microarrays.
+\newblock {\em Nature Genetics}, 20:207--211, 1998.
+
+\bibitem{potts52}
+R.~B. Potts.
+\newblock Some generalized order-disorder transformations.
+\newblock {\em Mathematical Proceedings of the Cambridge Philosophical
+  Society}, 48(01):106--109, 1952.
+
+\bibitem{reddy2007}
+C.~K. Reddy and J-H. Park.
+\newblock {M}ulti-resolution {B}oosting for {C}lassification and {R}egression
+  {P}roblems.
+\newblock In T.~Theeramunkong, B.~Kijsirikul, N.~Cercone, and T-B. Ho, editors,
+  {\em Advances in Knowledge Discovery and Data Mining}, volume 5476 of {\em
+  Lecture Notes in Computer Science}, pages 196--207. Springer Berlin
+  Heidelberg, 2009.
+
+\bibitem{rissanen1978}
+J.~Rissanen.
+\newblock {M}odeling {B}y {S}hortest {D}ata {D}escription.
+\newblock {\em Automatica}, 14(5):465 -- 471, 1978.
+
+\bibitem{roh10com}
+S.~W. Roh, G.~C.~J. Abell, K-H. Kim, Y-D. Nam, and J-W Bae.
+\newblock {C}omparing microarrays and next-generation sequencing technologies
+  for microbial ecology research.
+\newblock {\em Trends in Biotechnology}, 28(6):291--299, 2010.
+
+\bibitem{russell1911}
+B.~Russell.
+\newblock On the {R}elations of {U}niversals and {P}articulars.
+\newblock {\em Proceedings of the Aristotelian Society}, 12:1--24, 1911.
+
+\bibitem{sagiroglu13}
+S.~Sagiroglu and D.~Sinanc.
+\newblock Big data: A review.
+\newblock In {\em International Conference on Collaboration Technologies and
+  Systems (CTS), 2013}, pages 42--47, 2013.
+
+\bibitem{schwartz06}
+M.~Schwartz, E.~Zlotorynski, and B.~Kerem.
+\newblock {T}he molecular basis of common and rare fragile sites.
+\newblock {\em Cancer Letters}, 232(1):13--26, 2006.
+
+\bibitem{schwarz78}
+G.~Schwarz.
+\newblock {E}stimating the {D}imension of a {M}odel.
+\newblock {\em Annals of Statistics}, 6(2):461--464, March 1978.
+
+\bibitem{shaffer05}
+L.~G. Shaffer and N.~Tommerup.
+\newblock {\em {ISCN} 2005: {A}n {I}nternational {S}ystem for {H}uman
+  {C}ytogenetic {N}omenclature(2005) {R}ecommendations of the {I}nternational
+  {S}tanding {C}ommittee on {H}uman {C}ytogenetic {N}omenclature}.
+\newblock Karger, 2005.
+
+\bibitem{mixmodelcv}
+P.~Smyth.
+\newblock {M}odel selection for probabilistic clustering using cross-validated
+  likelihood.
+\newblock {\em Statistics and Computing}, 10(1):63--72, 2000.
+
+\bibitem{sonka2008}
+M.~Sonka, V.~Hlavac, and R.~Boyle.
+\newblock {\em Image processing, analysis, and machine vision}.
+\newblock Thomson, Toronto, 3 edition, 2008.
+
+\bibitem{stankiewicz2010}
+P.~Stankiewicz and J.~R. Lupski.
+\newblock Structural variation in the human genome and its role in disease.
+\newblock {\em Annual Review of Medicine}, 61(1):437--455, 2010.
+
+\bibitem{who2014}
+B.~W. Stewart and C.~P. Wild, editors.
+\newblock {\em {W}orld {C}ancer {R}eport 2014}.
+\newblock International Agency for Research on Cancer (IARC) Nonserial, 2008.
+
+\bibitem{stewart1998}
+G.~W. Stewart.
+\newblock {\em Matrix Algorithms: Volume 1, Basic Decompositions}.
+\newblock Society for Industrial Mathematics, illustrated edition, 1998.
+
+\bibitem{stone1974}
+M.~Stone.
+\newblock {C}ross-validatory {C}hoice and {A}ssessment of {S}tatistical
+  {P}redictions.
+\newblock {\em Journal of the Royal Statistical Society}, 36(2):111--147, 1974.
+
+\bibitem{sun13multiview}
+S.~Sun.
+\newblock A survey of multi--view machine learning.
+\newblock {\em Neural Computing and Applications}, 23(7--8):2031--2038, 2013.
+
+\bibitem{swartout1996}
+B.~Swartout, R.~Patil, K.~Knight, and T.~Russ.
+\newblock Towards distributed use of large--scale ontologies.
+\newblock In {\em Proceedings of AAAI Symposium on Ontological Engineering},
+  pages 138--148, 1996.
+
+\bibitem{tatti08}
+N.~Tatti.
+\newblock {\em {A}dvances in {M}ining {B}inary {D}ata: {I}temsets as
+  {S}ummaries}.
+\newblock PhD thesis, Helsinki University of Technology, Faculty of Information
+  and Natural Sciences, 2008.
+
+\bibitem{tikka2007b}
+J.~Tikka, J.~Hollm\'en, and S.~Myllykangas.
+\newblock Mixture {M}odeling of {DNA} copy number amplification patterns in
+  cancer.
+\newblock In F.~Sandoval, A.~Prieto, J.~Cabestany, and M.~Gra{\~n}a, editors,
+  {\em Proceedings of the 9th International Work-Conference on Artificial
+  Neural Networks (IWANN 2007)}, volume 4507 of {\em Lecture Notes in Computer
+  Science}, pages 972--979, San Sebasti\'an, Spain, 2007. Springer-Verlag.
+
+\bibitem{ueda2000}
+N.~Ueda, R.~Nakano, Z.~Ghahramani, and G.~E. Hinton.
+\newblock {SMEM} {A}lgorithm for {M}ixture {M}odels.
+\newblock {\em Neural Computation}, 12(9):2109--2128, 2000.
+
+\bibitem{usvasalo2010}
+A.~Usvasalo, E.~Elonen, U.~M. Saarinen-Pihkala, R.~R\"aty, A.~Harila-Saari,
+  P.~Koistinen, E-R. Savolainen, S.~Knuutila, and J.~Hollm\'en.
+\newblock Prognostic classification of patients with acute lymphoblastic
+  leukemia by using copy number profiles identified from array-based
+  comparative genomic hybridization data.
+\newblock {\em Leukemia Research}, 34(11):1476--1482, November 2010.
+
+\bibitem{AnzeCJ2012}
+A.~Vavpeti\v{c} and N.~Lavra\v{c}.
+\newblock {S}emantic {S}ubgroup {D}iscovery {S}ystems and {W}orkflows in
+  the{SDM-Toolkit}.
+\newblock {\em The Computer Journal}, 56(3):304--320, 2013.
+
+\bibitem{Vavpetic13jiis}
+A.~Vavpeti\v{c}, V.~Podpe\v{c}an, and N.~Lavra\v{c}.
+\newblock {S}emantic subgroup explanations.
+\newblock {\em Journal of Intelligent Information Systems}, 42(2):233--254,
+  2013.
+
+\bibitem{vogelstein2002}
+B.~Vogelstein and K.~W. Kinzler.
+\newblock {\em The genetic basis of human cancer}.
+\newblock McGraw-Hill, New York, 2002.
+
+\bibitem{indre2014}
+I.~\v{Z}liobait\.{e} and J.~Hollm\'en.
+\newblock Optimizing regression models for data streams with missing values.
+\newblock {\em Machine Learning}, page In Press, 2014.
+
+\bibitem{walpole2012}
+R.~Walpole, R.~Myers, S.~Myers, and K.~Ye.
+\newblock {\em {P}robability \& {S}tatistics for {E}ngineers \& {S}cientists}.
+\newblock Prentice Hall, NJ, USA, nineth edition, 2012.
+
+\bibitem{wang2005}
+Y.~Wang, J.~Hayakawa, F.~Long, Q.~Yu, A.~H. Cho, G.~Rondeau, J.~Welsh,
+  S.~Mittal, I.~De~Belle, E.~Adamson, M.~McClelland, and D.~Mercola.
+\newblock "promoter array" studies identify cohorts of genes directly regulated
+  by methylation, copy number change, or transcription factor binding in human
+  cancer cells.
+\newblock {\em Annals of the New York Academy of Sciences}, 1058(1):162--185,
+  November 2005.
+
+\bibitem{watson1953dna}
+J.~D. Watson and F.~H.~C. Crick.
+\newblock {M}olecular {S}tructure of {N}ucleic {A}cids: {A} {S}tructure for
+  {D}eoxyribose {N}ucleic {A}cid.
+\newblock {\em Nature}, 171(4356):737--738, April 1953.
+
+\bibitem{e2011principles}
+E.~Weinan.
+\newblock {\em {P}rinciples of {M}ultiscale {M}odeling}.
+\newblock Cambridge University Press, 2011.
+
+\bibitem{west96graph}
+D.~B. West.
+\newblock {\em Introduction to graph theory}.
+\newblock Prentice Hall, second (illustrated) edition, 1996.
+
+\bibitem{willsky02}
+A.~S. Willsky.
+\newblock {M}ultiresolution {M}arkov models for signal and image processing.
+\newblock {\em Proceedings of the IEEE}, 90(8):1396--1458, August 2002.
+
+\bibitem{wilson00}
+R.~Wilson.
+\newblock {MGMM}: multiresolution {G}aussian mixture models for computer
+  vision.
+\newblock In {\em Proceedings of 15th International Conference on Pattern
+  Recognition}, volume~1, pages 212--215. IEEE, September 2000.
+
+\bibitem{wolfe70}
+J.~H. Wolfe.
+\newblock {P}attern clustering by multivariate mixture analysis.
+\newblock {\em Multivariate Behavioral Research}, 5(3):329--350, July 1970.
+
+\bibitem{woo2006}
+M-J. Woo and T.~N. Sriram.
+\newblock {R}obust {E}stimation of {M}ixture {C}omplexity.
+\newblock {\em Journal of the American Statistical Association},
+  101(476):1475--1486, December 2006.
+
+\bibitem{wu1983}
+C.~F.~J. Wu.
+\newblock {O}n the {C}onvergence {P}roperties of the {EM} {A}lgorithm.
+\newblock {\em The Annals of Statistics}, 11(1):95--103, March 1983.
+
+\bibitem{Yao02agranular}
+J.~T. Yao and Y.~Y. Yao.
+\newblock {A} {G}ranular {C}omputing {A}pproach to {M}achine {L}earning.
+\newblock In L.~Wang, S.~K. Halgamuge, and X.~Yao, editors, {\em {P}roceedings
+  of the 1st {I}nternational {C}onference on {F}uzzy {S}ystems and {K}nowledge
+  {D}iscovery: {C}omputational {I}ntelligence for the {E}-{A}ge, 2 Volumes,
+  November 18-22, 2002, Orchid Country Club, Singapore}, FSDK'02, pages
+  732--736, 2002.
+
+\bibitem{zellner2001simplicity}
+A.~Zellner, H.~A. Keuzenkamp, and M.~McAleer, editors.
+\newblock {\em Simplicity, Inference and Modelling: Keeping it Sophisticatedly
+  Simple}.
+\newblock Cambridge University Press, March 2009.
+
+\bibitem{zurHausen2009}
+H.~zur Hausen.
+\newblock {T}he search for infectious causes of human cancers: {W}here and why.
+\newblock {\em Virology}, 392(1):1 -- 10, September 2009.
+
+\end{thebibliography}

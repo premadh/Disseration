@@ -1,0 +1,225 @@
+\chapter[Discussion]{Discussion}
+\markboth{Discussion}{}
+\label{ch:discussion}
+
+\begin{fquote}[Abigail Adams]Learning is not attained by chance, 
+it must be sought for with ardor and attended to with diligence.
+\fqsource{Letter to John Quincy Adams (1780)} \end{fquote} 
+
+\begin{synopsis}
+The work in the thesis focused on the analysis of multiresolution 
+0--1 data. The application area of choice was chromosomal 
+aberrations patterns in cancer genomics defined in multiple 
+resolutions. The proposed algorithms, mixture models and 
+semantic data mining, for analysis of multiresolution data are 
+experimented on the chromosomal aberrations data with plausible
+results. Furthermore, an efficient method to train a chain of 
+mixture models was proposed to aid model selection
+in mixture models. Multiresolution modelling methods, and model
+selection in mixture models are discussed in this chapter along
+with their applicability, limitations, and possible future 
+directions of work. The future directions of work discussed
+in this chapter concerns specific methods discussed
+and developed in the thesis. The future work section in 
+Chapter~\ref{ch:summary}, i.e. Section~\ref{s:finfuture},
+discusses the overall future work in the multiresolution 
+modelling domain. 
+\end{synopsis}
+
+
+
+\section{Model Selection in Mixture Models}
+\label{ss:dmodelselection}
+Model selection is an age--old problem in statistics and machine 
+learning~\cite{ando2010bayesian,lahiri2001model}. In~\citepub{j1}, 
+we do not propose a new model selection criteria but a computationally 
+efficient method to train a series mixture models differing only 
+in the number of components. The proposed method provides 
+additional facilities of computational efficiency, and similarity 
+of the mixture models in the chain except for the number of 
+components. Therefore, the method is suitable for comparison in 
+model selection. The experiments performed on the three datasets
+provide evidence of its efficiency and suitability in model 
+selection. Furthermore, the proposed mixture model for Bernoulli
+distributions can be seamlessly extended to other distributions
+such as the Gaussian distribution. 
+
+The proposed method is sensitive to local optima while  learning 
+mixture model via EM algorithm~\cite{McLachlan2008emext,wu1983}.
+We try to address the challenges of local optima by training 
+multiple mixture models once for largest number of mixture 
+components before merging the similar components. The best 
+mixture model among the trained mixture models is selected to 
+calculate the KL divergence among mixture components. The most 
+similar components, i.e., the the pair of components with the 
+minimum KL divergence are progressively merged to generate a 
+chain of mixture models. However, this does not guarantee that the 
+EM algorithm reaches global optimum. Avoidance of local 
+minima is still an open research problem in optimization and
+also the EM algorithm. Nevertheless, effectiveness, efficiency, 
+and seamless scalability of the proposed method makes the 
+proposed method, the method of choice for training mixture 
+models for model selection.
+
+
+
+\section{Multiresolution Analysis and Modelling of 0--1 Data}
+\label{s:dmultires}
+
+Algorithms and methods to study and analyze multiresolution
+data forms the crux of the thesis. The proposed algorithms 
+complement each other and specific algorithm fulfills the 
+requirements of a specific application. Nevertheless, 
+ample possibilities and challenges for future improvements 
+identified in the proposed algorithms and methods are discussed
+in the subsequent paragraphs.
+
+\subsection{Data Transformation for Multiresolution Analysis}
+\label{ss:dtatr4multiresmdl}
+
+The data transformation methods deterministically transform 
+the data across different resolutions in such a way that 
+data in different resolutions can be integrated in a single 
+resolution. The integrated data in single resolution can 
+then be analyzed using a method of choice because the data 
+is of the same dimensionality. In~\citepub{c1}, we experiment
+with mixture models and pattern mining algorithms generating 
+credible results for multiresolution chromosomal aberrations
+data.
+
+The data transformation methods are suitable for analysis requiring
+high processing speed and robustness. One of such application 
+area is stream data mining~\cite{aggarwal2007data,gaber2005,gama2014,indre2014} 
+where the requirements are efficient processing and  robustness
+in analysis against minor changes occurring in the data. 
+Data transformation methods are efficient because
+their computation is simple and are robust against small 
+changes and outliers; for the data transformation methods
+are deterministic given the structure of the multiresolution 
+phenomena. Furthermore, data transformation methods are suitable
+for applications requiring single resolution models for 
+multiresolution data. In hindsight, the data transformation
+methods lack probabilistic interpretation. Adding stochasticity in 
+those methods is a possible future work, for example,
+with foundations on Potts model~\cite{baxter08,potts52}.
+
+\subsection{Merging of Mixture Components}
+\label{ss:dmergingmixcompo}
+
+In~\citepub{c2}, we model multiresolution data by generating mixture 
+models in each resolution separately in such a way that the models 
+in each resolution incorporate the information from other data 
+resolutions. The experiments with  chromosomal aberrations data show 
+multiresolution mixture models incorporating the interactions 
+between data resolutions produce better results compared to the 
+individually trained single resolution models. 
+The method is suitable for application areas that require models in 
+each level of processing resolution such as image processing, 
+and computer vision~\cite{sonka2008}. Furthermore, experiments 
+in~\citepub{c2} have  shown that merging of mixture components 
+also helps in avoiding local optima when experimented on the two 
+single resolution models.
+
+Merging of mixture components from different mixture models aids
+in modelling interaction among the mixture models in different 
+resolutions. An approximation of symmetric KL divergence is used
+to compare the similarity of the components in the mixture 
+model. The similar components are then merged. However, the
+convergence analysis of KL divergence is not studied in detail
+in~\citepub{c2}. Furthermore, upsampling and downsampling of the 
+parameters of the mixture model adds another complexity to the 
+methodology. Additionally, improvements of the multiresolution 
+mixture model and avoidance of local optima in single resolution
+mixture model have been verified only by the empirical experiments. 
+However, solid mathematical foundations and the proofs for the 
+improvement are missing. One direction of future work could focus
+on mathematical proofs for the empirical evidence in merging 
+components for multiresolution modelling.
+
+\subsection{Multiresolution Mixture Components}
+\label{ss:dmultiresmdl}
+
+In~\citepub{c3}, a single multiresolution mixture model with multiresolution 
+mixture components are proposed and experimented using multiresolution
+chromosomal aberrations dataset. Only a single multiresolution model is generated 
+in~\citepub{c3}, which is unlike~\citepub{c2} where a model is generated for 
+each data resolution. The individual mixture components provide the functionality
+of Bayesian networks. The proposed model is suitable for the situations 
+requiring generative modelling prowess of probabilistic models. In~\citepub{c3} 
+generative property of the Bayesian network helps imputing the missing 
+resolutions of the data. Furthermore, the proposed multiresolution mixture
+model could be applicable in any domain where the network structure in 
+the multiresolution data is consistent across the dimensionality, for 
+example, in the image processing domain.
+
+
+The mixture components used as a Bayesian network model the 
+dependency among the nodes in the network. In addition each 
+node requires at least two probability values describing the 
+probability of the node given the probability of its parent 
+node~\cite{barberBRML12}. In contrast, the EM algorithm
+assumes IID distributions for the 
+samples~\cite{McLachlan2008emext}. Additionally, the EM 
+algorithm provides only a single probability value for a 
+node, i.e.,  probability of a random variable ($\theta$) 
+taking the value 1; two if you consider 1 - the given 
+probability ($1-\theta$). Hence, we transform the nodes
+to a vector representation to learn the mixture models via 
+the EM algorithm. For this reason, future work in 
+multiresolution mixture modelling could be to develop EM 
+algorithm to directly learn the parameters of mixture 
+models when the components are not vectors but a network. 
+Furthermore, transformation network representation in 
+multiresolution mixture model to vectors and then learning 
+the mixture models using the EM algorithm requires structural 
+similarity of networks used as the different mixture components. 
+Therefore, the future work could focus on relaxing 
+this requirement.
+
+\subsection{Multiresolution Analysis by Semantic Data Mining}
+\label{ss:dsemantic}
+
+In \citepub{j2}, we propose a three part methodology for comprehensive
+analysis of the multiresolution data. We use clustering results from the
+mixture models as the labels for the semantic data mining algorithm. 
+The additional background knowledge consists of taxonomy of hierarchy
+of regions, fragile sites, virus integration sites, amplification 
+hotspots, and cancer genes. We use banded matrices to visualize the
+clusters from mixture models and the rules from semantic data mining
+algorithm. The proposed method is suitable for both labeled and 
+unlabeled data as cluster indices can be used as class labels 
+in semantic data mining. Furthermore, banded matrix provides the 
+visualization aspect to the analysis for detailed study of the data. 
+Thus, the method is also suitable for rigorous analysis of 
+multiresolution data.
+
+Every system in the world is connected with one another and 
+each system effects the other system. Consequently, understanding
+one system can help understand another system better. In this 
+scenario, knowledge or understanding  of one system can be used 
+as a background information to understand another system. These
+methods are applicable in bioinformatics as interacting systems 
+produce different datasets. Similarly, the proposed methodology 
+could be applicable in natural language
+processing~\cite{manning1999foundations} 
+because the additional background  knowledge in natural language 
+processing are available in form of ontologies such as the 
+semantic web.
+
+The three part methodology proposed in~\citepub{j2} takes as an input
+only data in single resolution. Multiresolution analysis is achieved by using 
+taxonomy of multiresolution hierarchy  as an additional background knowledge 
+to the methodology. In the future, the semantic pattern mining algorithms
+can be developed to include data in multiple resolutions simultaneously
+in addition to the taxonomy of hierarchy of regions. 
+
+%We have not 
+%considered the class labels available for the data in coarse resolution.
+
+
+
+
+
+
+
+

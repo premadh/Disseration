@@ -1,0 +1,42 @@
+\chapter*{List of Abbreviations}
+
+\begin{longtable}[l]{lp{0.75\linewidth}}
+
+AIC	& Akaike Information Criterion \\
+BAC	& Bacterial Artificial Chromosome \\
+BIC	& Bayesian Information Criterion \\
+cDNA	& complementary Deoxyribonucleic Acid \\
+CGH	& Comparative Genomic Hybridization \\
+CNV	& Copy Number Variation \\
+DNA	& Deoxyribonucleic Acid  \\
+EB	& exabytes \\
+EM	& Expectation Maximization \\
+E-Step	& Expectation Step \\
+FISH	& Fluorescence In Situ Hybridization\\
+G–banding & Giemsa banding \\
+GMM	& Gaussian Mixture Model \\
+GrC	& Granular Computing \\
+ICL	& Integrated Classification Likelihood \\
+IID	& Independent and Identically Distributed \\
+ISCN	& International System for Human Cytogenetic \\
+	& Nomenclature \\
+kbp	& Kilo-base Pairs \\
+KL	& Kullback Leibler \\
+LHC	& Large Hadron Collider  \\
+MAFIA	& MAximal Frequent Itemset Algorithm \\
+MAP	& Maximum a Posteriori Probability \\
+Mbp	& Mega-base Pairs \\
+MCMC	& Markov Chain Monte Carlo \\
+MDL	& Minimum Description Length \\
+MGMM	& Multiresolution Gaussian Mixture Model \\
+MLE	& Maximum Likelihood Estimate \\
+MM	& Malignant pleural Mesothelioma \\
+MPSS	& Massive Parallel Signature Sequencing\\
+M-Step	& Maximization Step \\
+TMA	& Tumour Tissue Microarrays \\
+3Vs	& Volume, Velocity, and Variety\\
+WHO	& World Health Organization \\
+
+
+
+\end{longtable}

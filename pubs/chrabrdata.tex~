@@ -1,0 +1,16 @@
+\chapter[Multiresolution Chromosomal Aberrations Data]{Multiresolution Chromosomal Aberrations Data}
+\markboth{Multiresolution Chromosomal Aberrations Data}{}
+
+\label{ch:multires}
+\section{Section Heading}
+%\lipsum[1-4]
+\section{Cancer cases}
+Cancer cases are expected to rise 57\% worldwide in the next 20 years which is an imminent 
+human diaster~\cite{who2014}. 
+%\lipsum[5-6]
+\subsection{Subsection Heading}
+%\lipsum[7-8]
+\subsection{Subsection Heading}
+%\lipsum[9-10]
+\section{Section Heading}
+%\lipsum[11-12]
